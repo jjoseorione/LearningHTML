@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Propiedad Target</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <h1>Atributo "target" dentro de la etiqueta &lta&gt</h1>
+        <h2>Descripción</h2>
+        <p>
+        	La etiqueta &lta&gt cuenta con el atributo "target", el cual permite indicar dónde será abierto el recurso al que se hace referencia. Los valores que puede tomar target son "_blank", "_top", "_self", "_parent" y "<em>framename</em>".
+        </p>
+
+        <h2>target="_blank"</h2>
+        <p>
+        	Cuando target="_blank" se abre el recurso en una nueva pestaña
+        </p><p>
+
+        <h2>target="_top"</h2>
+        <p>
+        	Cuando target="_top" se abre el recurso en toda la ventana. Esto tiene significado cuando la ventana está dividida en secciones, lo cual se verá más adelante. Ejemplo:
+        </p><p>
+        	&lta href="example_t01.html" target="_top">Entire window&lt/a>
+        </p><p>
+        	<img src=./target_top.gif alt="Ejemplo de target=&quot_top&quot">
+        </p><p>
+        	<a href="http://www.tagindex.net/html/frame/example_t01.html">Ejemplo de target="_top"</a>
+        </p>
+
+        <h2>target="_self"</h2>
+        <p>
+        	Cuando target="_self" se abre el recurso en la misma sección donde se encuentra el enlace.
+        </p><p>
+        	&lta href="example_t02.html" target="_self">Same frame&lt/a>
+        </p><p>
+        	<img src=./target_self.gif alt="Ejemplo de target=&quot_self&quot">
+        </p><p>
+        	<a href="http://www.tagindex.net/html/frame/example_t02.html">Ejemplo de target="_self"</a>
+        </p>
+
+        <h2>target="_parent"</h2>
+        <p>
+        	Cuando target="_parent" se abre el recurso en el recuadro padre del que abrió el enlace.
+        </p><p>
+        	&lta href="example_t03.html" target="_parent">Parent frame&lt/a>
+        </p><p>
+        	<img src=./target_parent.gif alt="Ejemplo de target=&quot_parent&quot">
+        </p><p>
+        	Cuando cargas "child.html" dentro del recuadro B, el recuadro padre de C es el recuadro B.
+        </p><p>
+        	<img src=./target_parent2.gif alt="Ejemplo de target=&quot_parent&quot">
+        </p><p>
+        	<a href="http://www.tagindex.net/html/frame/example_t03.html">Ejemplo de target="_parent"</a>
+        </p>
+
+        <h2>target="<em>framename</em>"</h2>
+        <p>
+        	Cuando target="<em>framename</em>", donde <em>freename</em> es el nombre de un recuadro específico
+        </p><p>
+        	&lta href="example_t04.html" target="top">B frame&lt/a><br>
+        	&lta href="example_t04.html" target="main">C frame&lt/a>
+        </p><p>
+        	<img src=./target_name.gif alt="Ejemplo de target=&quot_name&quot">
+        </p><p>
+        	<a href="http://www.tagindex.net/html/frame/example_t04.html">Ejemplo de target="<em>framename</em>"</a>
+        </p>
+    </body>
+</html>

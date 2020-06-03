@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imágenes</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <h1>Uso de imágenes dentro de una página con la etiqueta &ltimg&gt </h1>
+        <h2>Descripción y uso</h2>
+        <p>
+        	Para insertar una imagen dentro de una página debemos utilizar el elemento HTML &ltimg&gt, la cuál es única; es decir, no tiene apertura y cierre, al igual que las etiquetas &ltbr&gt y  &lthr&gt. El uso de la etiqueta &ltimg&gt es muy similar al de  &lta&gt para enlaces. Su sintaxis es la siguiente:
+        </p><p>
+        	&ltimg src="ruta_de_la_imagen" alt="texto_descriptivo"&gt
+        </p><p>
+        	Se pueden usar más argumentos en la etiqueta &ltimg&gt, pero como mínimo deben inicializarse src y alt. Src es la ruta de la imagen, la cual puede ser una URL a una imagen en internet o de preferencia un archivo local con ruta relativa y significa <em>source</em>. Alt es una pequeña descripción de la imagen que puede ser útil cuando la imagen no puede cargarse por distintos motivos y significa <em>alternative</em>.
+        </p>
+        <h2>Ejemplo</h2>
+        <p>
+        	A continuación se muestra un pequeño ejemplo de cómo insertar una imagen. Se usó la etiqueta de la siguiente manera:
+        </p><p>
+        	&ltimg src="./dog.jpg" alt="Perro en blanco y negro"&gt
+        </p><p>
+        	Y éste es el resultado:
+        </p><p>
+        	<img src="./dog.jpg" alt="Perro en blanco y negro">
+        </p>
+        <h2>Combinación de etiquetas</h2>
+        <p>
+        	En ocasiones las etiquetas pueden combinarse para hacer uso de más de una función a la vez. Se puede, por ejemplo escribir un texto como título con la etiqueta &lth1&gt y rodearla de una etiqueta &lta&gt para que contenga un enlace hacia otra página, e incluso se le puede rodear de la etiqueta &ltem&gt o &ltstrong&gt para que el texto tenga cierto énfasis (aunque esto no tendría mucho sentido). De la misma forma, es posible convertir una imagen en enlace simplemente agregando la etiqueta &lta&gt. Por ejemplo, si se usa de la siguiente manera:
+        </p><p>
+        	&lta href=./hipervinculos.html&gt &ltimg src="./dog.jpg" alt="Perro en blanco y negro"&gt&lt/a&gt
+        </p><p>
+        	El resultado es la siguiente imagen que envía a la página del tema de hipervínculos
+        </p><p>
+        	<a href=./hipervinculos.html> <img src="./dog.jpg" alt="Perro en blanco y negro"></a>
+        </p>
+</html>
