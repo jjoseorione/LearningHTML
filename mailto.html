@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Envío de correo</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <h1>Uso de etiqueta &lta&gt para envío de correos</h1>
+        <h2>Descripción</h2>
+        <p>
+            El elemento &lta&gt permite direccionar un hipervínculo a un programa de envío de correos que tengamos configurado en nuestra computadora. Para esto, sólo se debe poner como atributo href la secuencia "mailto:<em>direccion@deseada.com</em>" sustituyendo con la dirección real a la que deseamos enviar el correo. También puede agregarse más información desde la etiqueta, como el asunto que deberá tener por defecto el correo a mandar, el cuerpo del mensaje, e incluso especificar envío de mail con copia y con copia oculta a otras direcciones. Esto se realiza agregando el separador '?', seguido de los apartados subject=<em>Asunto del mensaje</em>, body=<em>Cuerpo del mensaje</em>, cc=<em>direccion@deseada.com</em>, bcc=<em>direccion@deseada.com</em>. Los apartados anteriores deben ir separados por el caracter '&' dentro del atributo href.
+        </p>
+
+        <h2>Ejemplos</h2>
+        <h3>Ejemplo 1</h3>
+        <p>
+            Click <a href="mailto:jjoseorione@gmail.com">aquí</a> para enviar email.
+        </p><p>
+            El enlace anterior para enviar correo tiene el siguiente código:
+        </p><p>
+            &lta href="mailto:jjoseorione@gmail.com">aquí&lt/a>
+        </p>
+        <h3>Ejemplo 2</h3>
+        <p>
+            Click <a href="mailto:jjoseorione@gmail.com?subject=Curso HTML&body=Muy buenas tardes. Estoy interesado en el curso de HTML.&cc=serpent-@hotmail.com">aquí</a> para enviar email.
+        </p><p>
+            El enlace anterior para enviar correo tiene el siguiente código:
+        </p><p>
+            &lta href="mailto:jjoseorione@gmail.com?subject=Curso HTML&body=Muy buenas tardes. Estoy interesado en el curso de HTML.&cc=serpent-@hotmail.com">aquí&lt/a>
+        </p>
+        <hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>

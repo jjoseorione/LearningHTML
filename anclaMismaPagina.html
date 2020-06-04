@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ancla llamada dentro de la misma página</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <h1>Ancla llamada dentro de la misma página</h1>
+
+
+        <a name="descripcion"><h2>Descripción</h2></a>
+        <p>
+        	Con la etiqueta &lta> es posible crear una llamada con referencia dentro de la misma página. Es una práctica bastante común y bastante útil cuando queremos desplazarnos rápidamente dentro de una misma página; particularmente si dicha página es extensa. Por ejemplo, entre los distintos temas o subtemas de un artículo.
+        </p>
+        <h2>Uso de ancla</h2>
+        <p>
+        	Su uso se divide en dos partes. Primero debe de definirse el nombre de ancla con la etiqueta &lta> y el atributo name="<em>Nombre_ancla</em>" en el apartado de nuestra página que queremos sea el objetivo de nuestro direccionamiento.
+        </p><p>
+        	Posteriormente, debe de añadirse el vínculo con la etiqueta &lta> y el atributo href que ya conocemos, sólo que esta vez en lugar de usar un vínculo, usaremos sólo el nombre del ancla a la que queremos ser direccionados antecedido por un símbolo de '#'. También se puede usar un vínculo largo, seguido del símbolo de '#' y el nombre del ancla deseada, para ser dirigidos a un apartado específico de otra página
+        </p>
+        <h2>Ejemplos</h2>
+
+        <h3>Ejemplo:Ancla a una página externa en un apartado específico</h3>
+        <p>
+        	Click <a href="./TextoEjemplo.html#mostrarbasedatos">aquí</a> para ser llamado al artículo Tutorial de MySQL en el apartado show databases.
+        </p><p>
+        	El código de la etiqueta de enlace es el siguiente:
+        </p><p>
+        	&lta href="./TextoEjemplo.html#mostrarbasedatos">aquí&lt/a>
+        </p><p>
+        	Y el código de la etiqueta a la referencia en el texto es el siguiente:
+        </p><p>
+        	&lta name="mostrarbasedatos">&lth2>show databases&lt/h2>&lt/a>
+        </p>
+
+        <h3>Ejemplo: Ancla dentro de esta página</h3>
+        <p>
+        	Click <a href="#descripcion">aquí</a> para ser dirigo al apartado "Descripción" dentro de esta misma página.
+        </p><p>
+        	El código de la eiqueta de enlace es el siguiente:
+        </p><p>
+        	&lta href="#descripcion">aquí&lt/a>
+        </p><p>
+        	Y el código de la etiqueta a la referencia es el siguiente:
+        </p><p>
+        	&lta name="descripcion">&lth2>Descripción&lt/h2>&lt/a>
+        </p>
+        <hr><hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>
