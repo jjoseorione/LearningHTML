@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Formularios</h1>
+    	<h2>Definición</h2>
+    	<p>
+    		Los formularios permiten que el visitante de una página pueda cargar datos en el servidor. Esto es, puede introducir, por ejemplo, sus datos para un registro, agregar comentarios, o cualquier cosa que requiere ser llenado con datos por parte del usuario. 
+    	</p><p>
+    		HTML tiene únicamente la capacidad de crear formularios y no puede recuperar los datos enviados por el usuario ni de registrarlos en el servidor. Para ello se requiere de algún lemguaje de programador que se ejecute en el lado del servidor, como PHP, ASP, ASP.Net, JSP, NodeJS, etc.
+    	</p><p>
+    		Para crear un formulario se debe usar la etiqueta &ltform>, la cual debe tener apertura y cierre. Dentro del form se pueden crear distintos tipos de entradas, como botones, editores de línea, cuadros de chequeo, radios de selección, etc.
+    	</p><p>
+    		Los formularios pueden hacer uso de distintos atributos. Los dos principales son action="<em>páginaDeAcción</em>" y method="<em>MétodoDeAcción</em>". La página de acción es aquella que verá reflejada la entrada; es decir, la página que utiliza los datos de entrada. El método, de forma sencilla, define si los datos son privados (por ejemplo, una contraseña) o si pueden mostrarse en la página sin ningún problema.
+    	</p><p>
+    		Las entradas usan la etiqueta &ltinput> y también pueden usar diferentes atributos. Los principales son type="TipoDeEntrada" y name="nombreVariable". El atributo type, como su nombre lo indica, se refiere a qué tipo de datos se le piden al usuario, mientras que el atributo name guarda el nombre que se le de a la variable en donde se guardaran los datos introducidos por el usuario. El atributo size define el tamaño de la ventana de texto que se mostrará para escribir la entrada y no límita el número de caracteres que puedan introducirse.
+    	</p>
+
+    	<h2>Ejemplo</h2>
+    	<p>
+    		Se creará un formulario únicamente con una entrada de texto y un botón de envío. El código será el siguiente:
+    	</p><p>
+    		&ltform action="formulario1.html" method="post"><br>
+    			Escriba su nombre:<br>
+    			&ltinput type="text" name="nombre" size="20"><br>
+    			&ltbr><br>
+    			&ltinput type="submit" name="enviar"><br>
+    		&lt/form><br>
+    	</p><p>
+    		Y éste sería el resultado:
+    	</p><p>
+    		<form action="formulario1.php" method="post">
+    			Escriba su nombre:
+    			<input type="text" name="nombre" size="20">
+    			<br>
+    			<input type="submit" name="enviar">
+    		</form>
+    	</p>
+    	<hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>

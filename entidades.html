@@ -22,7 +22,7 @@
     			<th>Descripción</th>
     		</tr>
     		<tr>
-    			<td>&and;</td>
+    			<td>&amp;</td>
     			<td>&amp;amp;</td>
     			<td>Puede ser interpretado por el navegador como el inicio de una entidad</td>
     		</tr>
@@ -37,13 +37,36 @@
     			<td>Puede ser interpretado como el cierre de una etiqueta</td>
     		</tr>
     		<tr>
-    			<td>&lt;</td>
-    			<td>&amp;lt;</td>
-    			<td>Puede ser interpretado como el inicio de una etiqueta</td>
-    		</tr>
-
-
-
+    			<td>&quot;</td>
+    			<td>&amp;quot;</td>
+    			<td>Puede ser interpretado como el inicio de un atributo dentro de una etiqueta</td>
+    		</tr> 
+		</table>
+		<h2>No breaking speace</h2>
+		<h3>Definición</h3>
+		<p>
+			Otra entidad muy utilizada es &amp;nbsp;, el cual significa <em>No breaking speace</em>. Tiene dos usos, el primero es para añadir espacios extra al texto y que sean visibles en el documento HTML, ya que si únicamente agregamos muchos espacios en blanco en el código, el documento sólo mostrará un espacio; el segundo es, como su nombre lo indica, generar un espacio que no sea roto en dos renglones distintos. Esto último es útil cuando existen palabras que deben ir ligadas siempre (por ejemplo, unidades junto a su magnitud).
+		</p>
+		<h3>Ejemplo 1</h3>
+		<p>
+			A continuación se muestra un ejemplo del primer uso. El siguiente texto están separadas por diez espacios dentro del código HTML. Sin embargo, el navegador sólo muestra un espacio:
+		</p><p>
+			Palabras          separadas
+		</p><p>
+			Ahora bien, si en lugar de dejar diez espacios entre ambas palabras, dejamos sólo un espacio y luego 9 entidades &amp;nbsp;, el resultado es el siguiente:
+		</p><p>
+			Palabras &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;separadas.
+		</p>
+		<h3>Ejemplo 2</h3>
+		<p>
+			Una magnitud no debería quedar separa de sus unidades. Mueva el tamaño de la ventana para hacer que la cantidad de <strong>10 km/h</strong> quede separa por un lado el número 10 y por otro lado la cantidad km/h. Esto sucede cuando se usan espacios normales en el código HTML.
+		</p><p>
+			Ahora intente hacer lo mismo con este otro texto. Esta vez se puso un &amp;nbsp; en lugar de un espacio normal para que <strong>10&nbsp;km/h</strong> quede junto como si fuera una sola palabra y no se divida como en el texto anterior.
+		</p>
+		<h2>Otros caracteres</h2>
+		<p>
+			Existen otros caracteres que también pueden usarse como entidades en HTML. Por ejemplo, el caracter &copy;, puede escribirse directamente en el código HTML o bien puede escribirse de forma &amp;copy; o de forma &amp;#XA9;
+		</p>
     	<hr>
         <a href="./">&lt&lt&lt Volver al índice</a>
     </body>

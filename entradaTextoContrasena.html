@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entrada tipo texto y contraseña</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Entrada text y password</h1>
+    	<h2>Definición</h2>
+    	<p>
+    		Como se dijo anteriorrmente, existen distintos tipos de entradas; dos de ellos son el tipo type="text" y el tipo type="password". Ambos son similares, pues ambos envían cadenas de texto. La diferencia radica en la forma en la que se muestra la información antes de ser enviada. El tipo texto se muestra de forma normal, mientras que en el tipo password se ocultan los caracteres escritos.
+    	</p><p>
+    		También cabe mencionar que existe otra variación del tipo texto, el cual es el tipo type"mail". Este tipo de dato es útil cuando se requiere que la entrada sea un email, pues se asegura de que cuente con la estructura de una dirección de correo electrónico
+    	</p>
+    	<h2>Ejemplos</h2>
+    	<p>
+    		Se requiere crear un formulario en el que un usuario se registre en una plataforma en línea, para lo cuál debe introducir su nombre de usuario, su correo elecrónico y su contraseña. El código sería el siguiente:
+    	</p><p>
+    		&ltform><br>
+    			Nombre de Usuario:<br>
+    			&ltinput type="text" name="nombreUsuario"><br>
+    			&ltbr><br>
+    			Correo electrónico:<br>
+    			&ltinput type="mail" name="correo"><br>
+    			&ltbr><br>
+    			Contraseña:<br>
+    			&ltinput type="password" type="contrasena"><br>
+    			&ltbr><br>
+    			&ltinput type="submit" name="enviar"><br>
+    		&lt/form><br>
+    	</p><p>
+    		Y éste sería el resultado.
+    	</p><p>
+    		<form>
+    			Nombre de Usuario:
+    			<input type="text" name="nombreUsuario">
+    			<br>
+    			Correo electrónico:
+    			<input type="mail" name="correo">
+    			<br>
+    			Contraseña:
+    			<input type="password" type="contrasena">
+    			<br>
+    			<input type="submit" name="enviar">
+    		</form>
+    	</p><p>
+    		Para fines prácticos, sólo se moestrará el formulario, sin que envié los datos a ninguna página. Para tal fin, de momento se prescindirá de los atributos "action" y "method".
+    	</p>
+    	<hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>
