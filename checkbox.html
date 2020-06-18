@@ -6,9 +6,43 @@
     </head>
     <!-------------------------------------------------------------->
     <body>
-    	<h1>Checkboz</h1>
+    	<h1>Checkbox</h1>
     	<h2>Definición</h2>
     	<p>
-    		Las cajas de chequeo o checkbox son una forma en la que el usuario puede seleccionar una o más opciones dentro de una lista mostrada. Se crean con la etiquera input y el tipo checkbox.
+    		Las cajas de chequeo o checkbox son una forma en la que el usuario puede seleccionar una o más opciones dentro de una lista mostrada. Se crean con la etiquera input y el tipo checkbox. Todas deben tener un nombre diferente en el atributo name, debido a que cada una será una variable booleana diferente que puede tomar el valor de verdadero o falso.
+    	</p>
+
+    	<h2>Ejemplo</h2>
+    	<p>
+    		Se requiere que el ususario seleccione los lenguajes de programación que domina, para lo cual se le muestra una lista con checkboxes. Se muestra el siguiente código de ejemplo:
+    	</p><p>
+    		&ltform><br>
+    		&nbsp;&nbsp;Seleccione los lenguajes de programación que domina:
+    		&nbsp;&nbsp;&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="checkbox" name="lengC">C&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="checkbox" name="lengCpp">C++&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="checkbox" name="lengPy">Python&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="checkbox" name="lengJava">Java&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="checkbox" name="lengCs">Cs&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="checkbox" name="lengPhp">PHP&ltbr><br>
+    		&nbsp;&nbsp;&ltinput type="submit" name="Enviar"><br>
+    		&lt/form><br>
+    	</p><p>
+    		Y el resultado sería el siguiente:
+    	</p><p>
+    		<form>
+    			Seleccione los lenguajes de programación que domina:
+    			<br>
+    			<input type="checkbox" name="lengC">C<br>
+    			<input type="checkbox" name="lengCpp">C++<br>
+    			<input type="checkbox" name="lengPy">Python<br>
+    			<input type="checkbox" name="lengJava">Java<br>
+    			<input type="checkbox" name="lengCs">Cs<br>
+    			<input type="checkbox" name="lengPhp">PHP<br>
+    			<input type="submit" name="Enviar">
+    		</form>
+        </p>
+        <hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
     </body>
 </html>

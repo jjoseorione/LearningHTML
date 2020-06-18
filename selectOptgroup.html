@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etiqueta optgroup</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Agrupación con etiqueta optgroup</h1>
+    	<h2>Descripción</h2>
+    	<p>
+    		Dentro de las opciones que se encuentran en la lista desplegable select, es posible agrupar las opciones de acuerdo con alguna categoría. Esto se logra con la etiqueta &ltoptgroup label="<em>nombreGrupo</em>">, donde el elemento label guarda el nombre de la categoría o grupo que queremos crear. Optgroup es una etiqueta de apertura y cierre que debe de colocarse dentro del select y dentro de optgroup debemos colocar las opciones que vayan dentro de cada grupo.
+    	</p>
+    	<h2>Ejemplo</h2>
+    	<p>
+    		Se desea crear un formulario en el que el usuario seleccione en qué escuela media superior de la UNAM estudia. El código es el siguiente:
+    	</p><p>
+    		&lt;form><br>
+    		&nbsp;&nbsp;Ingrese su nombre:<br>
+    		&nbsp;&nbsp;&lt;input type="text" name="nombre"><br>
+    		&nbsp;&nbsp;&lt;br><br>
+    		&nbsp;&nbsp;Seleccione su plantel:<br>
+    		&nbsp;&nbsp;&lt;select><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="Escuela Nacional Preparatoria"><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1">Preparatoria 1 "Gabino Barreda"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2">Preparatoria 2 "Erasmo C.Quinto"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3">Preparatoria 3 "Justo Sierra"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="4">Preparatoria 4 "Vidal Castañeda y N."&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="5">Preparatoria 5 "José Vasconcelos"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="6">Preparatoria 6 "Antonio Caso"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="7">Preparatoria 7 "Ezequiel A Chávez"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="8">Preparatoria 8 "Miguel E Schulz"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="9">Preparatoria 9 "Pedro de Alba"&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="Colegio de Ciencias y Humanidades"><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="A">CCH Plantel Azcapotzalco&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="N">CCH Plantel Naucalpan&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="V">CCH Plantel Vallejo&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="O">CCH Plantel Oriente&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="S">CCH Plantel Sur&lt;/option><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup><br>
+    		&nbsp;&nbsp;&lt;/select><br>
+    		&nbsp;&nbsp;&lt;br>&lt;br><br>
+    		&nbsp;&nbsp;&lt;input type="submit" value="Enviar"><br>
+			&lt;/form>
+    	</p><p>
+    		Y éste sería el resultado:
+    	</p><p>
+    		<form>
+    			Ingrese su nombre:
+    			<input type="text" name="nombre">
+    			<br>
+    			Seleccione su plantel:
+    			<select>
+    				<optgroup label="Escuela Nacional Preparatoria">
+    					<option value="1">Preparatoria 1 "Gabino Barreda"</option>
+						<option value="2">Preparatoria 2 "Erasmo C.Quinto"</option>
+						<option value="3">Preparatoria 3 "Justo Sierra"</option>
+						<option value="4">Preparatoria 4 "Vidal Castañeda y N."</option>
+						<option value="5">Preparatoria 5 "José Vasconcelos"</option>
+						<option value="6">Preparatoria 6 "Antonio Caso"</option>
+						<option value="7">Preparatoria 7 "Ezequiel A Chávez"</option>
+						<option value="8">Preparatoria 8 "Miguel E Schulz"</option>
+						<option value="9">Preparatoria 9 "Pedro de Alba"</option>
+					</optgroup>
+					<optgroup label="Colegio de Ciencias y Humanidades">
+						<option value="A">CCH Plantel Azcapotzalco</option>
+						<option value="N">CCH Plantel Naucalpan</option>
+						<option value="V">CCH Plantel Vallejo</option>
+						<option value="O">CCH Plantel Oriente</option>
+						<option value="S">CCH Plantel Sur</option>
+					</optgroup>
+    			</select>
+    			<br><br>
+    			<input type="submit" value="Enviar">
+			</form>
+    	<hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>

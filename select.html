@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Lista desplegable Select</h1>
+    	<h2>Descripción</h2>
+    	<p>
+    		El elemento select es una lista desplegable. Este elemento HTML nos permite seleccionar una opción una opción entre un conjunto. Veremos en el concepto próximo que, según cómo lo configuremos, podemos seleccionar varias opciones. Para crear un select se utiliza la etiqueta de apertura y cierre &ltselect name="<em>nombreVariable</em>"> y entre las etiquetas de apertura y cierre select, se escriben las etiquetas de apertura y cierre &ltoption value="<em>valorVariable</em>">. Entre las etiquetas de apertura y cierre option se escribe el texto que se mostrará en dicha opción. El campo value de la opción seleccionada se le asignará a la variable del campo name del select.
+    	</p>
+    	<h2>Ejemplo</h2>
+    	<p>
+    		Se creará un formulario de registro, para lo cual el usuario debera escribir su nombre y el idioma que desea aprender. El código será el siguiente:
+    	</p><p>
+    		&ltform><br>
+    			Ingrese su nombre:<br>
+    			&ltinput type="text" name="nombre" size="30"><br>
+    			&ltbr><br>
+    			Seleccione su idioma:<br>
+    			&ltselect name="idioma"><br>
+    				&ltoption value="1">Español&lt/option><br>
+    				&ltoption value="2">Inglés&lt/option><br>
+    				&ltoption value="3">Francés&lt/option><br>
+    				&ltoption value="4">Portugués&lt/option><br>
+    				&ltoption value="5">Japonés&lt/option><br>
+    			&lt/select><br>
+    			&ltbr><br>
+    			&ltinput type="submit" value="Enviar"><br>
+    		&lt/form><br>
+    	</p><p>
+    		Y éste sería el resultado:
+    	</p><p>
+    		<form>
+    			Ingrese su nombre:
+    			<input type="text" name="nombre" size="30">
+    			<br>
+    			Seleccione su idioma:
+    			<select name="idioma">
+    				<option value="1">Español</option>
+    				<option value="2">Inglés</option>
+    				<option value="3">Francés</option>
+    				<option value="4">Portugués</option>
+    				<option value="5">Japonés</option>
+    			</select>
+    			<br>
+    			<input type="submit" value="Enviar">
+    		</form>
+        </p>
+        <hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>
