@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabindex</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Atributo Tabindex</h1>
+    	<h2>Descripción</h2>
+    	<p>
+    		El atributo tabindex permite indicar el orden en que las entradas toman foco; esto es, cuál va "primero" al presionar la tecla tab de nuestro teclado. Tebindex puede tomar valores entre 0 y 32767. Por defecto, los inputs toman foco en el orden en el que aparecen en el código HTML
+    	</p>
+    	<h2>Ejemplos</h2>
+    	<p>
+    		Realizaremos dos matrices de 3x3. En la primera de ellas las celdas tomarán foco por columnas (primero toda la primer columna, luego la segunda y al final la tercera). En el segundo se tomarán de forma diagonal, empezando por la esquina inferior izquierda, seguida de la celda media izquierda, la inferior media, etc. Ambas tomarán como último al botón de envío de datos.
+    	</p><p>
+    		Por columnas:
+    		<form>
+    			<input type="text" name="text1" size="5" tabindex="1">
+                <input type="text" name="text2" size="5" tabindex="4">
+                <input type="text" name="text3" size="5" tabindex="7">
+                <br>
+                <input type="text" name="text4" size="5" tabindex="2">
+                <input type="text" name="text5" size="5" tabindex="5">
+                <input type="text" name="text6" size="5" tabindex="8">
+                <br>
+                <input type="text" name="text7" size="5" tabindex="3">
+                <input type="text" name="text8" size="5" tabindex="6">
+                <input type="text" name="text9" size="5" tabindex="9">
+                <br>
+                <button type="submit" tabindex="10">Guardar datos <img src="./save.png" alt="save icon" width="15" height="15"></button>
+    		</form>
+    	</p><p>
+    		Código por columnas:<br>
+    		&lt;form><br>
+    		&nbsp;&nbsp;&lt;input type="text" name="text1" size="5" tabindex="1"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text2" size="5" tabindex="4"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text3" size="5" tabindex="7"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text4" size="5" tabindex="2"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text5" size="5" tabindex="5"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text6" size="5" tabindex="8"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text7" size="5" tabindex="3"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text8" size="5" tabindex="6"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text9" size="5" tabindex="9"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;button type="submit" tabindex="10">Guardar datos &lt;img src="./save.png" alt="save icon" width="15" height="15">&lt;/button><br>
+    		&lt;/form>
+    	</p><p>
+    		En diagonal:
+    		<form>
+    			<input type="text" name="text11" size="5" tabindex="14">
+                <input type="text" name="text12" size="5" tabindex="17">
+                <input type="text" name="text13" size="5" tabindex="19">
+                <br>
+                <input type="text" name="text14" size="5" tabindex="12">
+                <input type="text" name="text15" size="5" tabindex="15">
+                <input type="text" name="text16" size="5" tabindex="18">
+                <br>
+                <input type="text" name="text17" size="5" tabindex="11">
+                <input type="text" name="text18" size="5" tabindex="13">
+                <input type="text" name="text19" size="5" tabindex="16">
+                <br>
+                <button type="submit" tabindex="20">Guardar datos <img src="./save.png" alt="save icon" width="15" height="15"></button>
+    		</form>
+    	</p><p>
+    		Código en diagonal:<br>
+    		&lt;form><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text11" size="5" tabindex="14"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text12" size="5" tabindex="17"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text13" size="5" tabindex="19"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text14" size="5" tabindex="12"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text15" size="5" tabindex="15"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text16" size="5" tabindex="18"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text17" size="5" tabindex="11"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text18" size="5" tabindex="13"><br>
+            &nbsp;&nbsp;&lt;input type="text" name="text19" size="5" tabindex="16"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;button type="submit" tabindex="20">Guardar datos &lt;img src="./save.png" alt="save icon" width="15" height="15">&lt;/button><br>
+            &lt;/form>
+        </p>
+        <hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>

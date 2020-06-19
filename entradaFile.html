@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entrada tipo File</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Subida de archivos con entrada tipo file</h1>
+    	<h2>Descripción</h2>
+    	<p>
+    		El input tipo file nos permite enviar n archivo al servidor. Nuevamente HTML sólo indic al navegador que debe enviar el archivo al servidor, pero debe haber en el servidor un programa que lo almacence en una carpeta de dicho servidor. La sintaxis es la siguiente:
+        </p><p>
+            &lt;input type="file" name="<em>nombreArchivo</em>">
+        </p><p>
+            Usamos el atributo type que ya conocemos y el atributo name, el cual dará nombre al archivo que será subido al servidor.
+        </p><p>
+            Una cosa muy importante a tener en cuent cuando hacemos upload de archivos al servidor es inicializar la propiedad enctype del elemento form de la siguiente manera:
+        </p><p>
+            &lt;form method="<em>método</em>" action="<em>archivo</em>" enctype="<em>multipart/form-data</em>">
+        </p><p>
+            De esta forma le indicamos al navegador que el formulario almacena uno o más archivos que deven ser enciados al servidor
+        </p>
+
+        <h2>Ejemplo</h2>
+        <p>
+            Se requiere un formulario en el que un usuario suba su foto de perfil. El código sería el siguiente:
+        </p><p>
+            &lt;form><br>
+            &nbsp;&nbsp;Ingrese su nombre: <br>
+            &nbsp;&nbsp;&lt;input type="text" name="nombre" size="30"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;Seleccione una foto de perfil: <br>
+            &nbsp;&nbsp;&lt;input type="file" name="fotoPerfil"><br>
+            &nbsp;&nbsp;&lt;br><br>
+            &nbsp;&nbsp;&lt;button type="submit">Guardar datos &lt;img src="./save.png" <br>alt="save icon" width="15" height="15">&lt;/button><br>
+            &lt;/form><br>
+        </p><p>
+            Y éste sería el resultado:
+        </p><p>
+            <form>
+                Ingrese su nombre: 
+                <input type="text" name="nombre" size="30">
+                <br>
+                Seleccione una foto de perfil: 
+                <input type="file" name="fotoPerfil">
+                <br>
+                <button type="submit">Guardar datos <img src="./save.png" alt="save icon" width="15" height="15"></button>
+            </form>
+    	</p>
+        <hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>
