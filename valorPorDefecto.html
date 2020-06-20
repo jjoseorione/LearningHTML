@@ -9,12 +9,15 @@
     	<h1>Entradas con valores por defecto</h1>
     	<h2>Definición</h2>
     	<p>
-    		En HTML es posible agregar un valor por defecto a los campos de entrada, los cuáles pueden ser después modificados por el usuario. La forma es distinta para cada tipo de entrada
+    		En HTML es posible agregar un valor por defecto a los campos de entrada, los cuáles pueden ser después modificados por el usuario. La forma es distinta para cada tipo de entrada.
     	</p>
     	<h2>Ejemplos</h2>
     	<p>
     		Para fines prácticos, se mostrará únicamente los imputs y se prescindirá del elemento form.
-    	</p><p>
+    	</p>
+
+        <h3>Value</h3>
+        <p>
     		Las entradas de tipo texto, numérico, email, fecha, hora color y oculto (hidden) hacen uso del atributo value de la siguiente forma:
     	</p><p>
     		Texto: <input type="text" name="texto" value="Texto de muestra">
@@ -40,7 +43,10 @@
     		Color: <input type="color" name="color1" value="#FA9B8C">
     		<br>
     		Código: &lt;input type="color" name="color1" value="#FA9B8C">
-    	</p><p>
+    	</p>
+
+        <h3>Checked</h3>
+        <p>
     		Los radios y checkboxes hacen uso de la palabra "checked" de la siguiente forma:
     	</p><p>
     		Radio: 
@@ -55,8 +61,30 @@
     	</p><p>
     		Checkbox:
     		<input type="checkbox" name="booleno1">No checado por defecto
-    		<input type="checkbox" name="booleno2" checked="">Checado por defecto
+    		<input type="checkbox" name="booleno2" checked>Checado por defecto
+            <br>
+            Código:<br>
+            &lt;input type="checkbox" name="booleno1">No checado por defecto<br>
+            &lt;input type="checkbox" name="booleno2" checked="">Checado por defecto
     	</p>
+
+        <h3>Selected</h3>
+        <p>
+            En las listas desplegables select se hace uso de la palabra <em>selected</em> de la siguiente forma: 
+            <select name="país">
+                <option value="1">México</option>
+                <option value="2">EE UU</option>
+                <option value="3" selected>Canadá</option>
+            </select>
+        </p><p>
+            Código:<br>
+            &lt;select name="país"><br>
+            &nbsp;&nbsp;&lt;option value="1">México&lt;/option><br>
+            &nbsp;&nbsp;&lt;option value="2">EE UU&lt;/option><br>
+            &nbsp;&nbsp;&lt;option value="3" selected>Canadá&lt;/option><br>
+            &lt;/select><br>
+        </p>
+
     	<hr>
         <a href="./">&lt&lt&lt Volver al índice</a>
     </body>

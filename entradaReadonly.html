@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entrada readonly</title>
+        <meta charset="UTF-8">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+    	<h1>Entrada de sólo lectura</h1>
+    	<h2>Descripción</h2>
+    	<p>
+    		Otra propiedad que podemos asignarle a las entradas de un formulario es el elemento readonly. Esta propiedad es sólo útil para entradas tecleadas (texto, textarea, número, correo, color, etc.).
+    	</p><p>
+    		Si definimos la propiedad readonly a un conrol, el mismo es de sólo lectura y no podemos modificar su contenido. Cuando una entrada tiene la propiedad readonly, el input toma foco, pero no se puede cambiar su contenido. La diferencia con la propiedad disabled es que con ésta el input no toma foco y generalmente aparece con un color que indica que el input está deshabilitado.
+    	</p>
+
+    	<h2>Ejemplo</h2>
+    	<p>
+    		Se confeccionará una página que muestre los términos y condiciones de una aplicación o página. Ésta se debe de encontrar en un textarea con la propiedad disabled, para que de este modo pueda ser leído o copiado, pero no borrado. El código sería el siguiente:
+    	</p><p>
+    		&lt;form><br>
+    		&lt;fieldset><br>
+    		      &lt;legend>Instalación&lt;/legend><br>
+    		      &lt;textarea rows="10" cols="55" readonly>Términos y condiciones: &#013;Al instalar nuestro software usted acepta el uso de sus datos estadísticos para realización de pruebas de rendimiento y mejoramiento de nuestro software. En caso de un error, su sistema le preguntará si desea enviar un informe de errores. Al presionar "sí" usted acepta mandar una instantánea del estado de su máquina al momento del error. Copie y pegue este aviso en un bloc de notas para tenerlo disponible.<br>
+    		      &lt;/textarea><br>
+    		      &lt;br>&lt;input type="radio" name="acepta" value="true">Acepto los términos y condiciones.<br>
+    		      &lt;br>&lt;input type="radio" name="acepta" value="false">No acepto los términos y condiciones.<br>
+    		      &lt;br>&lt;br><br>
+    		      &lt;button type="submit">Cancelar&lt;/button> &lt;button type="submit">Siguiente&lt;/button><br>
+    		&lt;/fieldset><br>
+    		&lt;/form>
+    	</p><p>
+    		Y éste sería el resultado:
+    	</p><p>
+    		<form>
+    			<fieldset>
+    				<legend>Instalación</legend>
+    				<textarea rows="10" cols="55" readonly>Términos y condiciones: &#013;Al instalar nuestro software usted acepta el uso de sus datos estadísticos para realización de pruebas de rendimiento y mejoramiento de nuestro software. En caso de un error, su sistema le preguntará si desea enviar un informe de errores. Al presionar "sí" usted acepta mandar una instantánea del estado de su máquina al momento del error. Copie y pegue este aviso en un bloc de notas para tenerlo disponible.
+    				</textarea>
+    				<br><input type="radio" name="acepta" value="true">Acepto los términos y condiciones.
+    				<br><input type="radio" name="acepta" value="false">No acepto los términos y condiciones.
+    				<br><br>
+    				<button type="submit">Cancelar</button> <button type="submit">Siguiente</button> 
+    			</fieldset>
+    		</form>
+    	<hr>
+        <a href="./">&lt&lt&lt Volver al índice</a>
+    </body>
+</html>
