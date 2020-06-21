@@ -8,7 +8,37 @@
     <body>
     	<h1>Envío de datos por e-mail</h1>
     	<h2>Descripción</h2>
-    	
+    	<p>
+    		Una forma de obtener los datos de un formulario sin que sea necesario un lenguaje de programación es mandar los datos por correo electrónico. Para que esto sea posible debe usarse la palabra mailto en el atributo de la siguiente forma: action="<em>mailto:correo@deseado.com</em>", además de agregar el atributo enctype="text/plain", el cuál le dice al formulario qué forma de codificación utilizar (en este caso, texto plano).
+    	</p>
+
+    	<h2>Ejemplo</h2>
+    	<p>
+    		Se requiere confeccionar una página que permita hacer un reclamo de reparaciones y se envíen los datos a una dirección de correo. Se debe ingresar nombre, dirección y una descripción del problema. El código sería el siguiente:
+    	</p><p>
+
+    	</p><p>
+    		Y éste sería el resultado:
+    	</p><p>
+    		<form action="mailto:serpent-@hotmail.com?subject=Buzón de quejas" method="post" enctype="text/plain">
+    			<fieldset>
+    				<legend>Comuníquese con nosotros</legend>
+    				Nombre:
+    				<input type="text" name="nombre" size="30" placeholder="Ej. Eduardo" required>
+    				<br>
+    				Apellidos:
+    				<input type="text" name="apellidos" size="30" placeholder="Ej. Sánchez" required>
+    				<br>
+    				Dirección:
+    				<input type="text" name="direccion" size="40" placeholder="Calle, número, colonia, municipio, estado" required>
+    				<br>
+    				Comentario:
+    				<br>
+    				<textarea rows="5" cols="40" name="comentario" placeholder="Describa aquí el problema..." required></textarea>
+    				<br><br>
+    				<button type="submit">Enviar<img src="./sendMail.png" alt="save icon" width="15" height="15"></button>
+    			</fieldset>
+    		</form>
     	<hr>
         <a href="./">&lt&lt&lt Volver al índice</a>
     </body>
