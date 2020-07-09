@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-mx">
     <head>
-        <title>Curso HTML - Lang</title>
+        <title>Curso HTML - Atributo Title</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../styles/style.css" >
         <link rel="shortcut icon" href="../images/icon.ico">
@@ -9,21 +9,24 @@
     <!-------------------------------------------------------------->
     <body>
         <div class="divfondo">
-    	    <h1>Atributo lang</h1>
+    	    <h1>Atributo Title</h1>
     	    <h2>Descripción</h2>
     	    <p>
-    		    El atributo lang sirve para establecer el idioma predeterminado del texto de la página. Se suele utilizar en el elemento html, pero si ña página tiene contenido en otro idioma (además del predeterminado), se debe agregar un elemento que rodee a dicho contenido. Es de utilidad para los navegadores y motores de búsqueda
+    		    El atributo title puede usarse en cualquier elemento html. Sirve para mostrar una pequeña descripción de dicho elemento al poner el mouse encima.
     	    </p>
     	    <h2>Ejemplo</h2>
     	    <p>
+    	        Se muestra un párrafo con una descripción
     	        <div class="divcodigo">
-	                &lt;html <strong>lang="es"</strong>><br>
+	                &lt;html><br>
 	                &lt;head><br>
 	                &lt;title>&lt;/title><br>
 	                &lt;meta charset="UTF-8"><br>
 	                &lt;/head><br>
 	                &lt;body><br>
-                    Hola mundo<br>
+                    &lt;p title="Hola, esto es un párrafo"><br>
+                    Hola a todos. Este es un ejemplo del uso del atributo title. Pasa el mouse por encima de este párrafo para ver el resultado<br>
+                    &lt;/p><br>
 	                &lt;/body><br>
 	                &lt;/html>
     	        </div>
@@ -31,7 +34,9 @@
             <p>
                 Vista previa:
                 <div class="htmldefault">
-                    Hola mundo
+                    <p title="Hola, esto es un párrafo">
+                        Hola a todos. Este es un ejemplo del uso del atributo title. Pasa el mouse por encima de este párrafo para ver el resultado
+                    </p>
                 </div>
             </p>
         <a href="./"><button>⬅ Volver al índice</button></a>
