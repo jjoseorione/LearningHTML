@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso HTML - Formatos de Color</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Formatos de color</h1>
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Existen 3 formas de describir un color en CSS, éstas son en rgb/rgba decimal, rgba hexadecimal y en hsl/hsla. Las siglas RGB y RGBA significan Red-Green-Blue y Red-Green-Blue-Alpha. HSL signfica Hue-Saturation-Alpha.
+            </p>
+            <p>
+                En rgb y rgba decimal escribimos la cadena rgb o rgba según corresponda, seguido de de un paréntesis que contenga los valores decimales de rojo, verde, azul y canal alpha (transparencia) de la forma <strong>rgba(<em>rojo, verde, azul, apha</em>)</strong>. Los valores de cada color sólo pueden ir de 0 a 255. El canal apha debe tener un valor de entre 0 y 1.
+    	    </p>
+            <p>
+                En rgb hexadecimal debemos escribir un símbolo '#' seguido de dos dígitos hexadecimales (de 0 a F) para rojo, dos para verde y dos para azul con la forma <strong>#RRGGBB</strong>. De esta forma, el valor mínimo para cualquiera de los parámetros en 00 y el máximo es FF.
+            </p>
+            <p>
+                En hsl y hsla se utiliza el mismo formato que en rgb y rgba decimal usando la palabra hsl o hsla seguida de un paréntesis con los valores de matiz, saturación, brillo y canal alpha en la forma <strong>hsl(<em>matiz, saturación, brillo</em>)</strong>. El valor de H puede ir de 0 a 360, ya que lo que hace es rodear todo el círculo cromáico. Los valores de S y L se expresan en porcentaje de 0% a 100%.
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        Ejemplo de formatos de color:
+    	        <div class="divcodigo">
+	                &lt;html><br>
+	                &lt;head><br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+	                &lt;/head><br>
+	                &lt;body><br>
+
+                    &lt;div style="color: rgb(47,96,09); background-color:rgba(74,24,76,0.5);"><br>
+                    Este texto utiliza rgb(47,96,09) como color base y rgba(74,24,76,23) como color de fondo<br>
+                    &lt;/div><br>
+
+                    &lt;div style="color: #A9F2EB; background-color:#00C927;"><br>
+                    Este texto utiliza #A9F2EB como color base y #00C927 como color de fondo<br>
+                    &lt;/div><br>
+
+                    &lt;div style="color: #A9F2EB; background-color:#00C927;"><br>
+                    Este texto utiliza #A9F2EB como color base y #00C927 como color de fondo<br>
+                    &lt;/div><br>
+
+                    &lt;div style="color: hsl(183, 56%, 12%); background-color:hsla(263, 32%, 54%, 0.3);"><br>
+                    Este texto utiliza hsl(183, 56%, 12%) como color base y hsla(263, 32%, 54%, 0.3) como color de fondo<br>
+                    &lt;/div><br>
+
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <div style="color: rgb(47,96,09); background-color:rgba(74,24,76,0.5);">
+                        Este texto utiliza rgb(47,96,09) como color base y rgba(74,24,76,23) como color de fondo
+                    </div>
+                    <div style="color: #A9F2EB; background-color:#00C927;">
+                        Este texto utiliza #A9F2EB como color base y #00C927 como color de fondo
+                    </div>
+
+                    <div style="color: hsl(183, 56%, 12%); background-color:hsla(263, 32%, 54%, 0.3);">
+                        Este texto utiliza hsl(183, 56%, 12%) como color base y hsla(263, 32%, 54%, 0.3) como color de fondo
+                    </div>
+                </div>
+            </p>
+        <a href="./"><button>⬅ Volver al índice</button></a>
+        </div>
+    </body>
+</html>
