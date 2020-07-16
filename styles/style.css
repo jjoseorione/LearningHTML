@@ -22,11 +22,7 @@ h1
     text-shadow: 2px 2px 0 #000;
     opacity: 1;
 }
-h2
-{
-    text-indent: 1em;
-}
-h3
+h2, h3, h4, h5, h6
 {
     text-indent: 1em;
 }
@@ -48,11 +44,12 @@ a
 {
     text-decoration: none; 
     font-weight: bold;  
-    color: #006633;
+    color: #090;
+    background-color: transparent;
 }
-a:hover
+a li:hover, a li:active
 {
-    color: #00BB00;
+    background-color: #C5C5C5;
 }
 footer
 {
@@ -69,4 +66,19 @@ footer
 .volver
 {
     margin: 2em;
+}
+.aboton:link, .aboton:visited
+{
+    background-color: #09F;
+    color: #E7E7E7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+}
+.aboton:hover, .aboton:active
+{
+    background-color: #2BF;
 }

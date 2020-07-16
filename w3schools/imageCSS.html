@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso HTML - Imagen con CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+        <style>
+            img
+            {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Imagen con CSS</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Las imágenes también pueden ser modificadas con CSS. En este capítulo veremos únicamente dos propiedades CSS de imágenes: width, height y float. Las propiedades width y height, como su nombre lo indica, son para elegir las dimensiones de una imagen. Es más recomendable definir las dimensiones en estilo por elemento, debido a que una regla general en una hoja de estilo externa podría modificar crucialmente la forma en que se despliega una imagen. Por otra parte, el atributo float ayuda a desplegar una imagen de mejor forma al combinarla con texto al rededor. 
+    	    </p>
+
+    	    <h2>Ejemplos</h2>
+            <h3>Ejemplo 1</h3>
+    	    <p>
+    	        Ejemplo de la diferencia entre usar siempre width y height en HTML y en CSS con una regla de etilo general previmente definida:
+    	        <div class="divcodigo">
+	                &lt;html><br>
+	                &lt;head><br>
+
+                    <br>
+                    &lt;style><br>
+                        img<br>
+                        {<br>
+                            width: 100%;<br>
+                        }<br>
+                    &lt;/style><br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    <br>
+
+	                &lt;/head><br>
+	                &lt;body><br>
+
+                    <br>
+                    &lt;img src="../images/img_girl.jpg" alt="Girl in a jacket" title="Girl in a jacket 1" width="500" height="600"><br>
+                    &lt;img src="../images/img_girl.jpg" alt="Girl in a jacket" title="Girl in a jacket 2" style="width:500px; height:600px;"><br>
+
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <img src="../images/img_girl.jpg" alt="Girl in a jacket" title="Girl in a jacket 1" width="500" height="600">
+                    <img src="../images/img_girl.jpg" alt="Girl in a jacket" title="Girl in a jacket 2" style="width:500px; height:600px;">
+                </div>
+            </p>
+
+            <h3>Ejemplo 2</h3>
+            <p>
+                Ejemplo del uso de la propiedad float:
+                <div class="divcodigo">
+                    &lt;html><br>
+                    &lt;head><br>
+
+                    <br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    <br>
+
+                    &lt;/head><br>
+                    &lt;body><br>
+
+                    <br>
+                    &lt;p>Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. <strong>&lt;img src="../images/icon.ico" style="width:125px; height:125px;"></strong> Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float.&lt;/p><br>
+                    <br>
+                    &lt;p>Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. <strong>&lt;img src="../images/icon.ico" style="float:right; width:125px; height:125px;"></strong> Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. &lt;/p><br>
+
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <p>Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. <img src="../images/icon.ico" style="width:125px; height:125px;"> Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float. Párrafo con una imagen dentro de él sin elemento float.</p>
+                    <p>Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. <img src="../images/icon.ico" style="float:right; width:125px; height:125px;"> Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. Párrafo con una imagen dentro de él con elemento float a la derecha. </p>
+                </div>
+            </p>
+        <a href="./"><button>⬅ Volver al índice</button></a>
+        </div>
+    </body>
+</html>
