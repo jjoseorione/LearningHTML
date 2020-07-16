@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso HTML - Links con CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+        <style>
+            .a1:link {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            
+            .a1:visited {
+              color: blue;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            
+            .a1:hover {
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            
+            .a1:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            .a2:link, .a2:visited {
+              background-color: #f44336;
+              color: white;
+              padding: 15px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+            
+            .a2:hover, .a2:active {
+              background-color: red;
+            }
+        </style>
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Modificar enlaces con CSS</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    En HTML es posible modficar de varias maneras la forma en la que se muestran los enlaces de una página. Por default en HTML todos los enlaces se muestran subrayados, de color azul cuando son links aún no visitados (que no se encuentran en el historial), de color morado cuando ya han sido visitados con anterioridad y de color rojo cuando son links activos (Un link es activo cuando es seleccionado dando click, esto se muestra solo por un momento).
+    	    </p>
+
+            <h2>Pseudoselectores</h2>
+            <p>
+                Debido a que todos los enlaces son siempre creados con la etiqueta &lt;a>, se debe usar un pseudoselector para diferenciar entre enlaces no visitados, enlaces visitados, enlaces activos e incluso enlaces cuando tienen el mouse encima; de esta forma, cada tipo de enlace puede tener un estilo propio. Los peudoselectores usados para la etiqueta a son los siguientes:
+                <ul>
+                    <li><strong>:link</strong> Se utiliza para especificar enlaces que no han sido visitados.</li>
+                    <li><strong>:visited</strong> Se utiliza para especificar enlaces que ya han sido visitados con anterioridad.</li>
+                    <li><strong>:hover</strong> Se utiliza para especificar el estilo que tomará en enlace cuando tengan el mouse por encima.</li>
+                    <li><strong>:active</strong> Se utiliza para especificar enlaces activos.</li>
+                </ul>
+            </p>
+
+    	    <h2>Ejemplos</h2>
+            <h3>Ejemplo 1</h3>
+    	    <p>
+    	        Ejemplo de estilo de enlace que cambia de color según su estado: verde para no visitado, azul para visitado, rojo para hover y amarillo activo:
+    	        <div class="divcodigo">
+	                &lt;html><br>
+	                &lt;head><br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                        a:link {<br>
+                          color: green;<br>
+                          background-color: transparent;<br>
+                          text-decoration: none;<br>
+                        }<br>
+                        
+                        a:visited {<br>
+                          color: blue;<br>
+                          background-color: transparent;<br>
+                          text-decoration: none;<br>
+                        }<br>
+                        
+                        a:hover {<br>
+                          color: red;<br>
+                          background-color: transparent;<br>
+                          text-decoration: underline;<br>
+                        }<br>
+                        
+                        a:active {<br>
+                          color: yellow;<br>
+                          background-color: transparent;<br>
+                          text-decoration: underline;<br>
+                        }<br>
+                        &lt;/style><br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;a href="">Esto es un enlace&lt;/a><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <a href="" class="a1">Esto es un enlace</a>
+                </div>
+            </p>
+
+            <h3>Ejemplo 2</h3>
+            <p>
+                Ejemplo de estilo de enlace en forma de botón que cambia de color con hover y active:
+                <div class="divcodigo">
+                    &lt;html><br>
+                    &lt;head><br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                        a:link, a:visited {<br>
+                      background-color: #f44336;<br>
+                      color: white;<br>
+                      padding: 15px 25px;<br>
+                      text-align: center;<br>
+                      text-decoration: none;<br>
+                      display: inline-block;<br>
+                    }<br>
+                    
+                    a:hover, a:active {<br>
+                      background-color: red;<br>
+                    }<br>
+                        &lt;/style><br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;a href="">Esto es un enlace&lt;/a><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <a href="" class="a2">Esto es un botón</a>
+                </div>
+            </p>
+        <a href="./"><button>⬅ Volver al índice</button></a>
+        </div>
+    </body>
+</html>
