@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso HTML - Mapas</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Mapas con imágenes</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    La etiqueta &lt;map> permite definir un mapa de enlaces dentro de una imagen. Esto significa que la imagen puede ser cliqueada en distintas zonas y dirigir a distintas páginas (o a ninguna, si se cliquea en una zona sin asignación). Para definir cada zona que llevará a un enlace diferente, se utiliza la etiqueta &lt;area>. La etiqueta map tiene apertura y cierre, mientras que area es etiqueta simple.
+    	    </p>
+            <p>
+                Para crear un mapa dentro de una imagen primero debe agregarse la imagen con la etiqueta img, como lo hemos hecho hasta ahora, con los atibutos src y alt, pero adicionalmente se debe agregar el atributo usemap="#nombreMapa" agregando el nombre de nuestro mapa antecedido por un síbolo #.
+            </p>
+            <p>
+                En medio de las dos etiquetas map se deben agregar las áreas que queremos definir con la etiqueta area. La etiqueta área debe llevar los soguientes tributos:
+                <ul>
+                    <li><strong>shape="forma"</strong> Define la forma que debe llevar el área en el mapa. Las formas posibles son "rect" para rectángulo, "circle" para una circunferencia, "poly" para un polígono y "default" para el resto de la imagen.</li>
+
+                    <li><strong>cords="coordenadas"</strong> Define las coordenadas para el área a generas. Estas coordenadas dependen de la forma del área creada y siempre se expresan en píxeles. Para las formas rectangulares, las coordenadas son las coordenadas cartesianas <em>x</em> y <em>y</em> de dos esquinas opuestas (4 números en total) separados por comas. Para las formas circulares, se utilizan las coordenadas cartesianas del centro del circulo y su radio. Por último, para las formas poligonales se utilizan las coordenadas de cada vértice del polígono.</li>
+
+                    <li><strong>alt="alterno"</strong> Define el texto alterno a mostrarse en caso de que no esté disponible el área.</li>
+
+                    <li><strong>src="ruta"</strong> Define el enlace al que debe de ser dirigido el usuario en cada zona.</li>
+                </ul>
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        Ejemplo de un mapa dentro de una imagen donde existen enlaces en cada objeto de la imagen, los cuales dirigen cada uno a un artículo distinto de Wikipedia:
+    	        <div class="divcodigo">
+	                &lt;html><br>
+	                &lt;head><br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;img src="../images/map.jpg" alt="Escritorio de trabajo" usemap="#mapa_escritorio"><br>
+                    &lt;map name="mapa_escritorio"><br>
+                        &lt;area shape="rect" coords="34,44,270,350" alt="Laptop" href="https://es.wikipedia.org/wiki/Computadora_portátil"><br>
+                        &lt;area shape="rect" coords="290,172,333,250" alt="Teléfono Móvil" href="https://es.wikipedia.org/wiki/Teléfono_móvil"><br>
+                        &lt;area shape="circle" coords="337,300,44" alt="Café" href="https://es.wikipedia.org/wiki/Café"><br>
+                    &lt;/map><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <img src="../images/map.jpg" alt="Escritorio de trabajo" usemap="#mapa_escritorio">
+                    <map name="mapa_escritorio">
+                        <area shape="rect" coords="34,44,270,350" alt="Latpop" href="https://es.wikipedia.org/wiki/Computadora_port%C3%A1til">
+                        <area shape="rect" coords="290,172,333,250" alt="Teléfono Móvil" href="https://es.wikipedia.org/wiki/Teléfono_móvil">
+                        <area shape="circle" coords="337,300,44" alt="Café" href="https://es.wikipedia.org/wiki/Café">
+                    </map>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>
