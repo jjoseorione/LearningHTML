@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso HTML - Tablas CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+        <style>
+            .tabla1, .tabla1 th, .tabla1 td{
+                border: 3px solid orange;
+            }
+
+            .tabla2, .tabla2 th, .tabla2 td{
+                border: 3px solid orange;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Edición de tablas con CSS</h1>
+
+    	    <h2>Propiedad border en tablas</h2>
+            <h3>Descripción</h3>
+    	    <p>
+    		    La propiedad border puede ser utilizada en tablas y celdas. De esta forma, la línea que rodea cada celda o la de la tabla entera puede ser cambiada de color o de grueso.
+    	    </p>
+            <h3>Ejemplo</h3>
+            <p>
+                Ejemplo de tabla con borde de 3 pixeles de grueso y color naranja:
+                <div class="divcodigo">
+                    &lt;html><br>
+                    &lt;head><br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    table, th, td {<br>
+                        border: 3px solid orange;<br>
+                    }<br>
+                    &lt;/style><br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;table><br>
+                        &lt;tr><br>
+                            &lt;th>Nombre&lt;/th><br>
+                            &lt;th>Apellido&lt;/th><br>
+                            &lt;th>Edad&lt;/th><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Jill&lt;/td><br>
+                            &lt;td>Smith&lt;/td><br>
+                            &lt;td>50&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Eve&lt;/td><br>
+                            &lt;td>Jackson&lt;/td><br>
+                            &lt;td>94&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>John&lt;/td><br>
+                            &lt;td>Doe&lt;/td><br>
+                            &lt;td>80&lt;/td><br>
+                        &lt;/tr><br>
+                    &lt;/table><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <table class="tabla1">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </table>
+                </div>
+            </p>
+
+            <h2>Bordes de celdas unidos</h2>
+            <h3>Descripción</h3>
+            <p>
+                La propiedad <em>border-collapse: collapse;</em> ayuda a que los bordes de las celdas no luzcan separados y en su lugar aparezcan completamente unidos.
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                Ejemplo donde se toma la misma tabla del ejemplo anterior y se agregan los bordes colapsados:
+                <div class="divcodigo">
+                    &lt;html><br>
+                    &lt;head><br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    table, th, td {<br>
+                        border: 3px solid orange;<br>
+                        border-collapse: collapse;<br>
+                    }<br>
+                    &lt;/style><br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;table><br>
+                        &lt;tr><br>
+                            &lt;th>Nombre&lt;/th><br>
+                            &lt;th>Apellido&lt;/th><br>
+                            &lt;th>Edad&lt;/th><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Jill&lt;/td><br>
+                            &lt;td>Smith&lt;/td><br>
+                            &lt;td>50&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Eve&lt;/td><br>
+                            &lt;td>Jackson&lt;/td><br>
+                            &lt;td>94&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>John&lt;/td><br>
+                            &lt;td>Doe&lt;/td><br>
+                            &lt;td>80&lt;/td><br>
+                        &lt;/tr><br>
+                    &lt;/table><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <table class="tabla2">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </table>
+                </div>
+            </p>
+
+            <h2>Estilo completo a tablas</h2>
+            <h3>Descripción</h3>
+            <p>
+                En general, las tablas pueden hacer uso de las propiedades que utilizan el resto de elementos html. Se pueden agregar, por ejemplo, paddings, fuentes, colores de fondo, alineación de texto, entre varias propiedades más.
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                Ejemplo donde se toma la misma tabla del ejemplo anterior y se agregan los bordes colapsados:
+                <div class="divcodigo">
+                    &lt;html><br>
+                    &lt;head><br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    table, th, td {<br>
+                        border: 3px solid orange;<br>
+                        border-collapse: collapse;<br>
+                    }<br>
+                    &lt;/style><br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;table><br>
+                        &lt;tr><br>
+                            &lt;th>Nombre&lt;/th><br>
+                            &lt;th>Apellido&lt;/th><br>
+                            &lt;th>Edad&lt;/th><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Jill&lt;/td><br>
+                            &lt;td>Smith&lt;/td><br>
+                            &lt;td>50&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Eve&lt;/td><br>
+                            &lt;td>Jackson&lt;/td><br>
+                            &lt;td>94&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>John&lt;/td><br>
+                            &lt;td>Doe&lt;/td><br>
+                            &lt;td>80&lt;/td><br>
+                        &lt;/tr><br>
+                    &lt;/table><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <table class="tabla2">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </table>
+                </div>
+            </p>
+    	    
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>
