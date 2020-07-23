@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso HTML - Etiqueta &lt;colgroup></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Etiqueta &lt;colgroup></h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    La etiqueta &lt;colgroup>&lt;/colgroup> sirve para definir propiedades a las celdas de un grupo de columnas en una tabla. Por lo general, la propiedad a cambiar es el estilo.
+    	    </p>
+            <p>
+                La etiqueta colgroup debe encerrar a un conjunto de etiquetas &lt;col>, las cuales definirán lo que pasará con las columnas de la tabla. La etiqueta col puede llevar los atributos span="numDeColumnas", el cual define el número de columnas que cumpliran con dicha regla, y style="estiloCSS", el cual define el estilo de dichas columnas.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        Ejemplo de uso de colgroup y col. Las primeras dos columnas toman un estilo y la última toma otro:
+    	        <div class="divcodigo">
+	                &lt;html><br>
+	                &lt;head><br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;table border="1" style="color: white;"><br>
+                        &lt;colgroup><br>
+                            &lt;col span="2" style="background-color: blue"><br>
+                            &lt;col span="2" style="background-color: dodgerblue"><br>
+                        &lt;/colgroup><br>
+                        &lt;tr><br>
+                            &lt;th>Nombre&lt;/th><br>
+                            &lt;th>Apellido&lt;/th><br>
+                            &lt;th>Edad&lt;/th><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Jill&lt;/td><br>
+                            &lt;td>Smith&lt;/td><br>
+                            &lt;td>50&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>Eve&lt;/td><br>
+                            &lt;td>Jackson&lt;/td><br>
+                            &lt;td>94&lt;/td><br>
+                        &lt;/tr><br>
+                        &lt;tr><br>
+                            &lt;td>John&lt;/td><br>
+                            &lt;td>Doe&lt;/td><br>
+                            &lt;td>80&lt;/td><br>
+                        &lt;/tr><br>
+                    &lt;/table><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <table border="1" style="color: white;">
+                        <colgroup>
+                            <col span="2" style="background-color: blue">
+                            <col span="2" style="background-color: dodgerblue">
+                        </colgroup>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </table>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

@@ -14,6 +14,46 @@
                 border: 3px solid orange;
                 border-collapse: collapse;
             }
+
+            .tabla3, .tabla3 th, .tabla3 td{
+                font-family: sans-serif;
+                border-collapse: collapse;
+            }
+
+            .tabla3{
+                border: 1px solid rgb(52, 116, 235);
+            }
+
+            .tabla3 tr:nth-child(odd){
+                background-color: rgb(185, 207, 248);
+            }
+
+            .tabla3 tr:nth-child(even){
+                background-color: rgb(232, 239, 253);
+            }
+
+            .tabla3 th{
+                color: white;
+                background-color: rgb(52, 116, 235);
+                padding: 0.3em 2em;
+                border: 0px;
+            }
+
+            .tabla3 td{
+                padding: 0.1em 0.5em;
+                border-bottom: 1px solid rgb(52, 116, 235);
+                border-top: 1px solid rgb(52, 116, 235);
+            }
+
+            .tabla3 td:nth-child(1){
+                font-weight: bold;
+            }
+
+            .tabla3 td:nth-child(3){
+                text-align: right;
+            }
+
+
         </style>
     </head>
     <!-------------------------------------------------------------->
@@ -177,26 +217,60 @@
             <h2>Estilo completo a tablas</h2>
             <h3>Descripción</h3>
             <p>
-                En general, las tablas pueden hacer uso de las propiedades que utilizan el resto de elementos html. Se pueden agregar, por ejemplo, paddings, fuentes, colores de fondo, alineación de texto, entre varias propiedades más.
+                En general, las tablas pueden hacer uso de las propiedades que utilizan el resto de elementos html. Se pueden agregar, por ejemplo, paddings, fuentes, colores de fondo, alineación de texto, entre varias propiedades más. Además, pueden crearse id y clases para usarlas en más de una tabla.
             </p>
             <h3>Ejemplo</h3>
             <p>
-                Ejemplo donde se toma la misma tabla del ejemplo anterior y se agregan los bordes colapsados:
+                Ejemplo donde se da un estilo completo a una tabla; se da color a los bordes exteriores, a los bordes entre filas y al fondo de la cabecera, se le da distinto padding a las cabeceras y a los datos, la primera columna está en negritas y la última está alineada a la derecha, las filas pares son de un tono más claro que las impares. Todo el estilo está creado en una clase para ser usado sólo en algunas tablas.
                 <div class="divcodigo">
                     &lt;html><br>
                     &lt;head><br>
                     &lt;title>&lt;/title><br>
                     &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
-                    table, th, td {<br>
-                        border: 3px solid orange;<br>
+                    &lt;style><br><br>        
+                    .tabla3, .tabla3 th, .tabla3 td{<br>
+                        font-family: sans-serif;<br>
                         border-collapse: collapse;<br>
                     }<br>
+        
+                    .tabla3{<br>
+                        border: 1px solid rgb(52, 116, 235);<br>
+                    }<br>
+        
+                    .tabla3 tr:nth-child(odd){<br>
+                        background-color: rgb(185, 207, 248);<br>
+                    }<br>
+        
+                    .tabla3 tr:nth-child(even){<br>
+                        background-color: rgb(232, 239, 253);<br>
+                    }<br>
+        
+                    .tabla3 th{<br>
+                        color: white;<br>
+                        background-color: rgb(52, 116, 235);<br>
+                        padding: 0.3em 2em;<br>
+                        border: 0px;<br>
+                    }<br>
+        
+                    .tabla3 td{<br>
+                        padding: 0.1em 0.5em;<br>
+                        border-bottom: 1px solid rgb(52, 116, 235);<br>
+                        border-top: 1px solid rgb(52, 116, 235);<br>
+                    }<br>
+        
+                    .tabla3 td:nth-child(1){<br>
+                        font-weight: bold;<br>
+                    }<br>
+        
+                    .tabla3 td:nth-child(3){<br>
+                        text-align: right;<br>
+                    }<br>
+                    <br>
                     &lt;/style><br>
                     &lt;/head><br>
                     &lt;body><br>
                     <br>
-                    &lt;table><br>
+                    &lt;table class="tabla3"><br>
                         &lt;tr><br>
                             &lt;th>Nombre&lt;/th><br>
                             &lt;th>Apellido&lt;/th><br>
@@ -226,7 +300,7 @@
             <p>
                 Vista previa:
                 <div class="htmldefault">
-                    <table class="tabla2">
+                    <table class="tabla3">
                         <tr>
                             <th>Nombre</th>
                             <th>Apellido</th>
