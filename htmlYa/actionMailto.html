@@ -15,11 +15,12 @@
     	<h2>Ejemplo</h2>
     	<p>
     		Se requiere confeccionar una página que permita hacer un reclamo de reparaciones y se envíen los datos a una dirección de correo. Se debe ingresar nombre, dirección y una descripción del problema. El código sería el siguiente:
-    	</p><p>
+    	</p>
 
-    	</p><p>
+    	<p>
     		Y éste sería el resultado:
-    	</p><p>
+    	</p>
+        <p>
     		<form action="mailto:serpent-@hotmail.com?subject=Buzón de quejas" method="post" enctype="text/plain">
     			<fieldset>
     				<legend>Comuníquese con nosotros</legend>
@@ -39,6 +40,12 @@
     				<button type="submit">Enviar<img src="./sendMail.png" alt="save icon" width="15" height="15"></button>
     			</fieldset>
     		</form>
+        </p>
+
+        <h2>Adicional: placeholder</h2>
+        <p>
+            Como puede notarse, el formulario anterior contiene dentro de los inputs una pequeña sugerencia de cómo puede ser llenado cada campo. Esto se logra con el atributo placeholder=<em>"textoGuía"</em>, donde <em>textoGuía</em> es el texto que se mostrará al usuario en color claro y desaparecerá en cuando éste empiece a escribir dentro del input.
+        </p>
     	<hr>
         <a href="./">&lt&lt&lt Volver al índice</a>
     </body>

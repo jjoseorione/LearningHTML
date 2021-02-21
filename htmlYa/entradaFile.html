@@ -9,7 +9,7 @@
     	<h1>Subida de archivos con entrada tipo file</h1>
     	<h2>Descripción</h2>
     	<p>
-    		El input tipo file nos permite enviar n archivo al servidor. Nuevamente HTML sólo indic al navegador que debe enviar el archivo al servidor, pero debe haber en el servidor un programa que lo almacence en una carpeta de dicho servidor. La sintaxis es la siguiente:
+    		El input tipo file nos permite enviar un archivo al servidor. Nuevamente HTML sólo indica al navegador que debe enviar el archivo al servidor, pero debe haber en el servidor un programa que lo almacence en una carpeta de dicho servidor. La sintaxis es la siguiente:
         </p><p>
             &lt;input type="file" name="<em>nombreArchivo</em>">
         </p><p>
@@ -19,7 +19,21 @@
         </p><p>
             &lt;form method="<em>método</em>" action="<em>archivo</em>" enctype="<em>multipart/form-data</em>">
         </p><p>
-            De esta forma le indicamos al navegador que el formulario almacena uno o más archivos que deven ser enciados al servidor
+            De esta forma le indicamos al navegador que el formulario almacena uno o más archivos que deben ser enviados al servidor.
+        </p>
+
+        <h2>Atributos</h2>
+        <p>
+            La entrada tipo file puede utilizar los siguientes atributos:
+            <ul>
+                <li><strong>accept:</strong> Sirve para especificar los tipos de archivos que pueden ser usados y así asegurar que el servidor recibirá sólo tipos permitidos. Para ello se deben listar y separar con comas los tipos de archivos deseados (pueden ser sus extensiones). Por ejemplo, el atributo <em>accept=".jpg, .gif, .png, .tiff, .bmp"</em> aceptará sólo esos formatos de imagen. También puede usarse un seleccionador global para elegir todas las extensiones de un tipo de archivo. Por ejemplo, el atributo <em>accept="audio/*"</em> permitirá todos los archivos de tipo audio.</li>
+            </ul>
+            <ul>
+                <li><strong>capture:</strong> Sirve para especificar qué cámara usar para la captura del archivo (en caso de que dentro del atributo accept se incluya a la cámara). Los valores permitidos son <em>capture="user"</em>, el cual permite usar la cámara frontal, y <em>capture="environment"</em>, el cual permite usar la cámara trasera. En caso de que este atributo no esté específicado, se dispositivo del usuario será el que decida qué medio de entrada usar.</li>
+            </ul>
+            <ul>
+                <li><strong>multiple:</strong> Permite al usuario elegir más de un archivo a la vez.</li>
+            </ul>
         </p>
 
         <h2>Ejemplo</h2>
@@ -31,7 +45,7 @@
             &nbsp;&nbsp;&lt;input type="text" name="nombre" size="30"><br>
             &nbsp;&nbsp;&lt;br><br>
             &nbsp;&nbsp;Seleccione una foto de perfil: <br>
-            &nbsp;&nbsp;&lt;input type="file" name="fotoPerfil"><br>
+            &nbsp;&nbsp;&lt;input type="file" name="fotoPerfil" accept="image/*"><br>
             &nbsp;&nbsp;&lt;br><br>
             &nbsp;&nbsp;&lt;button type="submit">Guardar datos &lt;img src="./save.png" <br>alt="save icon" width="15" height="15">&lt;/button><br>
             &lt;/form><br>
@@ -43,7 +57,7 @@
                 <input type="text" name="nombre" size="30">
                 <br>
                 Seleccione una foto de perfil: 
-                <input type="file" name="fotoPerfil">
+                <input type="file" name="fotoPerfil" accept="image/*">
                 <br>
                 <button type="submit">Guardar datos <img src="./save.png" alt="save icon" width="15" height="15"></button>
             </form>
