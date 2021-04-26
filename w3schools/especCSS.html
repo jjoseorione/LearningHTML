@@ -18,7 +18,7 @@
                 Usar estilos por etiqueta es de gran utilidad para cuando queremos dar estilo a una única sección de un documento HTML. Si queremos usar el mismo estilo más de una vez en un documento o un toda una web, esta forma no es lo más recomendado, ya que se tendría que especificar el estilo cada vez que es utilizado. Para usar estilos por etiqueta se debe hacer uso del atributo style="<em>Instrucciones_CSS_aquí</em>" en el elemento deseado.
             </p>
             <p>
-                Si queremos usar un estilo más de una vez en un mismo documento, lo mejor será declarar ese estilo de forma global para todo el documento. Para eso debemos de crear un bloque de código CSS al inicio del documento. Esto se logra con las etiquetas &lt;style>&lt;/style> dentro de la sección head del documento. Entre las etiquetas style se deben escribir las instrucciones CSS.
+                Si queremos usar un estilo más de una vez en un mismo documento, lo mejor será declarar ese estilo de forma global para todo el documento. Para eso debemos de crear un bloque de código CSS al inicio del documento. Esto se logra con las etiquetas &lt;style&gt;&lt;/style&gt; dentro de la sección head del documento. Entre las etiquetas style se deben escribir las instrucciones CSS.
             </p>
             <p>
                 En caso de que se vayan a usar los mismos estilos de más de una página, lo mejor es crear un archivo externo que contenga todos los estilos. Este archivo debe tener sólo sentencias CSS (sin HTML) y debe tener extensión .css. Posteriormente, dicho atchivo debe ser convocado en nuestros documentos HTML en la sección head con la etiqueta &lt;link&nbsp;rel="stylesheet"&nbsp;href="<em>ruta_archivo_CSS</em>">
@@ -27,61 +27,64 @@
     	    <p>
     	        Ejemplo de CSS por etiqueta:
     	        <div class="divcodigo">
-	                &lt;html><br>
-	                &lt;head><br>
-	                &lt;title>&lt;/title><br>
-	                &lt;meta charset="UTF-8"><br>
-	                &lt;/head><br>
-	                &lt;body><br>
-
-                    &lt;h3 style="color: blue; background-color: yellow;">
+	                &lt;html&gt;<br>
+                    <br>
+	                &lt;head&gt;<br>
+	                &lt;title>&lt;/title&gt;<br>
+	                &lt;meta charset="UTF-8"&gt;<br>
+	                &lt;/head&gt;<br>
+                    <br>
+	                &lt;body&gt;<br>
+                    &lt;h3 style="color: blue; background-color: yellow;"&gt;
                     Texto azul con fondo amarillo
-                    &lt;/h3><br>
-	                
-                    &lt;/body><br>
-	                &lt;/html>
+                    &lt;/h3&gt;<br>
+                    &lt;/body&gt;<br>
+                    <br>
+	                &lt;/html&gt;
     	        </div>
             </p>
             <p>
                 Ejemplo de CSS por documento:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
-                    h1{<br>
+                    &lt;html&gt;<br>
+                    <br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
+                    h3{<br>
                         color: blue;<br>
                         background-color: yellow<br>
                     }<br>
-                    &lt;/style>
-                    &lt;/head><br>
-                    &lt;body><br>
-
-                    &lt;h3>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    <br>
+                    &lt;body&gt;<br>
+                    &lt;h3&gt;
                     Texto azul con fondo amarillo
-                    &lt;/h3><br>
-
-                    &lt;/body><br>
-                    &lt;/html>
+                    &lt;/h3&gt;<br>
+                    &lt;/body&gt;<br>
+                    <br>
+                    &lt;/html&gt;
                 </div>
             </p>
             <p>
                 Ejemplo de CSS por arhivo externo invocado:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;link&nbsp;rel="stylesheet"&nbsp;href="./styles.css">
-                    &lt;/head><br>
-                    &lt;body><br>
-
-                    &lt;h3>
+                    &lt;html&gt;<br>
+                    <br>
+                    &lt;head&gt;<br>
+                    &lt;title>&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;link&nbsp;rel="stylesheet"&nbsp;href="./styles.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                    <br>
+                    &lt;body&gt;<br>
+                    &lt;h3&gt;
                     Texto azul con fondo amarillo
-                    &lt;/h3><br>
-
-                    &lt;/body><br>
+                    &lt;/h3&gt;<br>
+                    &lt;/body&gt;<br>
+                    <br>
                     &lt;/html>
                 </div>
     	    </p>

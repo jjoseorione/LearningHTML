@@ -30,7 +30,7 @@
               text-decoration: underline;
             }
             .a2:link, .a2:visited {
-              background-color: #f44336;
+              background-color: red;
               color: white;
               padding: 15px 25px;
               text-align: center;
@@ -39,7 +39,7 @@
             }
             
             .a2:hover, .a2:active {
-              background-color: red;
+              background-color: #a00;
             }
         </style>
     </head>
@@ -59,7 +59,7 @@
                 <ul>
                     <li><strong>:link</strong> Se utiliza para especificar enlaces que no han sido visitados.</li>
                     <li><strong>:visited</strong> Se utiliza para especificar enlaces que ya han sido visitados con anterioridad.</li>
-                    <li><strong>:hover</strong> Se utiliza para especificar el estilo que tomará en enlace cuando tengan el mouse por encima.</li>
+                    <li><strong>:hover</strong> Se utiliza para especificar el estilo que tomará el enlace cuando tengan el mouse por encima.</li>
                     <li><strong>:active</strong> Se utiliza para especificar enlaces activos.</li>
                 </ul>
             </p>
@@ -69,11 +69,12 @@
     	    <p>
     	        Ejemplo de estilo de enlace que cambia de color según su estado: verde para no visitado, azul para visitado, rojo para hover y amarillo activo:
     	        <div class="divcodigo">
-	                &lt;html><br>
-	                &lt;head><br>
-	                &lt;title>&lt;/title><br>
-	                &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+	                &lt;html&gt;<br>
+                  <br>
+	                &lt;head&gt;<br>
+	                &lt;title&gt;&lt;/title&gt;<br>
+	                &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
                         a:link {<br>
                           color: green;<br>
                           background-color: transparent;<br>
@@ -97,20 +98,20 @@
                           background-color: transparent;<br>
                           text-decoration: underline;<br>
                         }<br>
-                        &lt;/style><br>
-	                &lt;/head><br>
-	                &lt;body><br>
-                    <br>
-                    &lt;a href="">Esto es un enlace&lt;/a><br>
-                    <br>
-	                &lt;/body><br>
-	                &lt;/html>
+                        &lt;/style&gt;<br>
+	                &lt;/head&gt;<br>
+                  <br>
+	                &lt;body&gt;<br>
+                    &lt;a href="http://www.sitio.com"&gt;Esto es un enlace&lt;/a&gt;<br>
+	                &lt;/body&gt;<br>
+                  <br>
+	                &lt;/html&gt;
     	        </div>
     	    </p>
             <p>
                 Vista previa:
                 <div class="htmldefault">
-                    <a href="" class="a1">Esto es un enlace</a>
+                    <a href="http://www.sitio.com" class="a1">Esto es un enlace</a>
                 </div>
             </p>
 
@@ -118,31 +119,31 @@
             <p>
                 Ejemplo de estilo de enlace en forma de botón que cambia de color con hover y active:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
-                        a:link, a:visited {<br>
-                      background-color: #f44336;<br>
+                    &lt;html&gt;<br>
+                    <br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
+                      a:link, a:visited {<br>
+                      background-color: red;<br>
                       color: white;<br>
                       padding: 15px 25px;<br>
                       text-align: center;<br>
                       text-decoration: none;<br>
                       display: inline-block;<br>
                     }<br>
-                    
                     a:hover, a:active {<br>
-                      background-color: red;<br>
+                      background-color: #a00;<br>
                     }<br>
-                        &lt;/style><br>
-                    &lt;/head><br>
-                    &lt;body><br>
+                        &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
                     <br>
-                    &lt;a href="">Esto es un enlace&lt;/a><br>
+                    &lt;body&gt;<br>
+                    &lt;a href="">Esto es un enlace&lt;/a&gt;<br>
+                    &lt;/body&gt;<br>
                     <br>
-                    &lt;/body><br>
-                    &lt;/html>
+                    &lt;/html&gt;
                 </div>
             </p>
             <p>

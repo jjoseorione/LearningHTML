@@ -6,78 +6,111 @@
     </head>
     <!-------------------------------------------------------------->
     <body>
-        <h1>Creación de tablas con etiqueta &lttable></h1>
+        <h1>Creación de tablas con etiqueta &lt;table&gt;</h1>
         <h2>Descripción</h2>
         <p>
         	El objetivo fundamental de las tablas es mostrar una serie de datos en forma ordenada, organizando en filas y columnas. Algo importante es que no usaremos las tablas para organizar la página completa, pues esto se hará posteriormente con hojas de estilo CSS.
         </p>
 
-        <h2>Etiquetas &lttable>, &lttr> y &lttd></h2>
+        <h2>Etiquetas &lt;table&gt;, &lt;tr&gt; y &lt;td&gt;</h2>
         <p>
         	Para la creación de tablas se utilizan 3 etiquetas fundamentales en el siguiente orden:
         </p><ol>
-        	<li>La etiqueta <strong>&lttable></strong> encierra a toda la tabla, marcando el inicio y final de la misma</li>
-        	<li>La etiqueta <strong>&lttr></strong> sirve para iniciar una fila en la tabla, por lo que todo lo que se encierre en dicha etiqueta será una fila de la tabla. Tr significa <em>table row</em></li>
-        	<li>La etiqueta <strong>&lttd></strong> sirve para crear una celda de datos, las cuáles van encerradas en filas. Ts significa <em>table data</em></li>
+        	<li>La etiqueta <strong>&lt;table&gt;</strong> encierra a toda la tabla, marcando el inicio y final de la misma</li>
+        	<li>La etiqueta <strong>&lt;tr&gt;</strong> sirve para iniciar una fila en la tabla, por lo que todo lo que se encierre en dicha etiqueta será una fila de la tabla. Tr significa <em>table row</em></li>
+        	<li>La etiqueta <strong>&lt;td&gt;</strong> sirve para crear una celda de datos, las cuáles van encerradas en filas. Ts significa <em>table data</em></li>
         </ol>
 
-        <h2>Etiquetas &ltth> y &ltcaption></h2>
+        <h2>Etiquetas &lt;th&gt; y &lt;caption&gt;</h2>
         <p>
         	Adicionalmente se puede hace uso de más etiquetas; dos de ellas son las siguientes:
         </p><ul>
-            <li>La etiquta <strong>&ltth></strong> sirve para crear una celda de encabezado, la cual es distinta al resto de celdas de la misma fila o columna. Th significa <em>table header</em>. Por default la celda de encabezado se muestra en negritas y con texto centrado.</li>
-            <li>La etiqueta <strong>&ltcaption></strong> permite agregar una celda de título a la tabla, la cual se mostrará a lo largo de toda una fila.</li>
+            <li>La etiquta <strong>&lt;th&gt;</strong> sirve para crear una celda de encabezado, la cual es distinta al resto de celdas de la misma fila o columna. Th significa <em>table header</em>. Por default la celda de encabezado se muestra en negritas y con texto centrado.</li>
+            <li>La etiqueta <strong>&lt;caption&gt;</strong> permite agregar una celda de título a la tabla, la cual se mostrará a lo largo de toda una fila.</li>
         </ul>
         <h2>Atributo border</h2>
         <p>
-        	Uno de los atributos que podemos usar tanto dentro de la etiqueta &lttable>, como en las etiquetas de celda es border="<em>tamaño_borde</em>", el cual, como su nombre lo indica, da el tamaño de borde de la celda o tabla.
+        	Uno de los atributos que podemos usar tanto dentro de la etiqueta &lt;table&gt;, como en las etiquetas de celda es border="<em>tamaño_borde</em>", el cual, como su nombre lo indica, da el tamaño de borde de la celda o tabla.
         </p>
         <h2>Ejemplo</h2>
         <p>
-        	Supongamos que quisiéramos mostrar una tabla con la tabla de ISR mensual del año 2020. El código sería el siguiente:
+        	Supongamos que quisiéramos mostrar la tabla de ISR mensual del año 2020. El código sería el siguiente:
         </p><p>
-        	&lttable border="1"><br>
-                &ltcaption>Tabla de retención mensual ISR 2020&lt/caption><br>
-        	    &lttr><br>
-        	    	&ltth>Límite inferior&lt/th><br>
-        	    	&ltth>Límite superior&lt/th><br>
-        	    	&ltth>Cuota fija&lt/th><br>
-        	    	&ltth>Porcentaje sobre&ltbr>límite inferior&lt/th><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$0.01&lt/td> &lttd>$578.58&lt/td> &lttd>$0.00&lt/td> &lttd>1.92%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$578.53&lt/td> &lttd>$4 910.18&lt/td> &lttd>$11.11&lt/td> &lttd>6.40%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$4 919.19&lt/td> &lttd>$8 629.20&lt/td> &lttd>$288.33&lt/td> &lttd>10.88%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$8 629.21&lt/td> &lttd>$10 031.07&lt/td> &lttd>$692.96&lt/td> &lttd>16.00%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$10 031.08&lt/td> &lttd>$12 009.94&lt/td> &lttd>$917.26&lt/td> &lttd>17.92%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$12 009.95&lt/td> &lttd>$24 222.31&lt/td> &lttd>$1 271.87&lt/td> &lttd>21.36%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$24 222.32&lt/td> &lttd>$38 177.69&lt/td> &lttd>$3 880.44&lt/td> &lttd>23.52%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$38 177.70&lt/td> &lttd>$72 887.50&lt/td> &lttd>$7 162.74&lt/td> &lttd>30.00%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$72 887.51&lt/td> &lttd>$97 183.33&lt/td> &lttd>$17 575.69&lt/td> &lttd>32.00%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$97 183.34&lt/td> &lttd>$291 550.00&lt/td> &lttd>$25 350.35&lt/td> &lttd>34.00%&lt/td><br>
-        	    &lt/tr><br>
-        	    &lttr><br>
-        	    	&lttd>$291 550.01&lt/td> &lttd>En adelante&lt/td> &lttd>$91 435.02&lt/td> &lttd>35.00%&lt/td><br>
-        	    &lt/tr><br>
-       		&lt/table>
+        	&lt;table border="1"&gt;<br>
+                &lt;caption&gt;Tabla de retención mensual ISR 2020&lt;/caption&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;th&gt;Límite inferior&lt;/th&gt;<br>
+        	    	&lt;th&gt;Límite superior&lt;/th&gt;<br>
+        	    	&lt;th&gt;Cuota fija&lt;/th&gt;<br>
+        	    	&lt;th&gt;Porcentaje sobre&lt;br&gt;límite inferior&lt;/th&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$0.01&lt;/td&gt;
+                    &lt;td&gt;$578.58&lt;/td&gt;
+                    &lt;td&gt;$0.00&lt;/td&gt;
+                    &lt;td&gt;1.92%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$578.53&lt;/td&gt;
+                    &lt;td&gt;$4 910.18&lt;/td&gt;
+                    &lt;td&gt;$11.11&lt;/td&gt;
+                    &lt;td&gt;6.40%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$4 919.19&lt;/td&gt;
+                    &lt;td&gt;$8 629.20&lt;/td&gt;
+                    &lt;td&gt;$288.33&lt;/td&gt;
+                    &lt;td&gt;10.88%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$8 629.21&lt;/td&gt;
+                    &lt;td&gt;$10 031.07&lt;/td&gt;
+                    &lt;td&gt;$692.96&lt;/td&gt;
+                    &lt;td&gt;16.00%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$10 031.08&lt;/td&gt;
+                    &lt;td&gt;$12 009.94&lt;/td&gt;
+                    &lt;td&gt;$917.26&lt;/td&gt;
+                    &lt;td&gt;17.92%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$12 009.95&lt;/td&gt;
+                    &lt;td&gt;$24 222.31&lt;/td&gt;
+                    &lt;td&gt;$1 271.87&lt;/td&gt;
+                    &lt;td&gt;21.36%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$24 222.32&lt;/td&gt;
+                    &lt;td&gt;$38 177.69&lt;/td&gt;
+                    &lt;td&gt;$3 880.44&lt;/td&gt;
+                    &lt;td&gt;23.52%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$38 177.70&lt;/td&gt; 
+                    &lt;td&gt;$72 887.50&lt;/td&gt;
+                    &lt;td&gt;$7 162.74&lt;/td&gt;
+                    &lt;td&gt;30.00%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$72 887.51&lt;/td&gt;
+                    &lt;td&gt;$97 183.33&lt;/td&gt;
+                    &lt;td&gt;$17 575.69&lt;/td&gt;
+                    &lt;td&gt;32.00%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$97 183.34&lt;/td&gt;
+                    &lt;td&gt;$291 550.00&lt;/td&gt;
+                    &lt;td&gt;$25 350.35&lt;/td&gt;
+                    &lt;td&gt;34.00%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+        	    &lt;tr&gt;<br>
+        	    	&lt;td&gt;$291 550.01&lt;/td&gt;
+                    &lt;td&gt;En adelante&lt;/td&gt;
+                    &lt;td&gt;$91 435.02&lt;/td&gt;
+                    &lt;td&gt;35.00%&lt;/td&gt;<br>
+        	    &lt;/tr&gt;<br>
+       		&lt;/table&lt;
     	</p><p>
     		Y éste sería el resultado:
     	</p><p>
@@ -125,6 +158,6 @@
         	</table>
     	</p>
     	<hr>
-        <a href="./">&lt&lt&lt Volver al índice</a>
+        <a href="./">&lt;&lt;&lt; Volver al índice</a>
     </body>
 </html>

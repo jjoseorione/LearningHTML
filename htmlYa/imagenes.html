@@ -6,12 +6,12 @@
     </head>
     <!-------------------------------------------------------------->
     <body>
-        <h1>Uso de imágenes dentro de una página con la etiqueta &ltimg&gt </h1>
+        <h1>Uso de imágenes dentro de una página con la etiqueta &lt;img&gt; </h1>
         <h2>Descripción y uso</h2>
         <p>
-        	Para insertar una imagen dentro de una página debemos utilizar el elemento HTML &ltimg&gt, la cuál es única; es decir, no tiene apertura y cierre, al igual que las etiquetas &ltbr&gt y  &lthr&gt. El uso de la etiqueta &ltimg&gt es muy similar al de  &lta&gt para enlaces. Su sintaxis es la siguiente:
+        	Para insertar una imagen dentro de una página debemos utilizar el elemento HTML &lt;img&gt;, la cuál es monómica; es decir, no tiene apertura y cierre, al igual que las etiquetas &lt;br&gt; y  &lt;hr&gt;. El uso de la etiqueta &lt;img&gt; es muy similar al de  &lt;a&gt; para enlaces. Su sintaxis es la siguiente:
         </p><p>
-        	&ltimg src="ruta_de_la_imagen" alt="texto_descriptivo"&gt
+        	&lt;img src="ruta_de_la_imagen" alt="texto_descriptivo"&gt;
         </p><p>
         	Se pueden usar más argumentos en la etiqueta &ltimg&gt, pero como mínimo deben inicializarse src y alt. Src es la ruta de la imagen, la cual puede ser una URL a una imagen en internet o de preferencia un archivo local con ruta relativa y significa <em>source</em>. Alt es una pequeña descripción de la imagen que puede ser útil cuando la imagen no puede cargarse por distintos motivos y significa <em>alternative</em>.
         </p>
@@ -19,7 +19,7 @@
         <p>
         	A continuación se muestra un pequeño ejemplo de cómo insertar una imagen. Se usó la etiqueta de la siguiente manera:
         </p><p>
-        	&ltimg src="./dog.jpg" alt="Perro en blanco y negro"&gt
+        	&lt;img src="./dog.jpg" alt="Perro en blanco y negro"&gt;
         </p><p>
         	Y éste es el resultado:
         </p><p>
@@ -27,9 +27,9 @@
         </p>
         <h2>Combinación de etiquetas</h2>
         <p>
-        	En ocasiones las etiquetas pueden combinarse para hacer uso de más de una función a la vez. Se puede, por ejemplo escribir un texto como título con la etiqueta &lth1&gt y rodearla de una etiqueta &lta&gt para que contenga un enlace hacia otra página, e incluso se le puede rodear de la etiqueta &ltem&gt o &ltstrong&gt para que el texto tenga cierto énfasis (aunque esto no tendría mucho sentido). De la misma forma, es posible convertir una imagen en enlace simplemente agregando la etiqueta &lta&gt. Por ejemplo, si se usa de la siguiente manera:
+        	En ocasiones las etiquetas pueden combinarse para hacer uso de más de una función a la vez. Se puede, por ejemplo escribir un texto como título con la etiqueta &lt;h1&gt; y rodearla de una etiqueta &lt;a&gt; para que contenga un enlace hacia otra página, e incluso se le puede rodear de la etiqueta &lt;em&gt; o &lt;strong&gt; para que el texto tenga cierto énfasis (aunque esto no tendría mucho sentido). De la misma forma, es posible convertir una imagen en enlace simplemente agregando la etiqueta &lt;a&gt; alrededor de una etiqueta &lt;img&gt;. Por ejemplo, si se usa de la siguiente manera:
         </p><p>
-        	&lta href=./hipervinculos.html&gt &ltimg src="./dog.jpg" alt="Perro en blanco y negro"&gt&lt/a&gt
+        	&lt;a href=./hipervinculos.html&gt; &lt;img src="./dog.jpg" alt="Perro en blanco y negro"&gt; &lt;/a&gt;
         </p><p>
         	El resultado es la siguiente imagen que envía a la página del tema de hipervínculos
         </p><p>
@@ -39,18 +39,18 @@
         <p>
             Uno de los atributos útiles en el elemento img es width y height, los cuales ayudan a redimensionar una imagen en html. Puede utilizarse en pixeles exactos o en porcentaje de pantalla (en este caso, la imagen se redimensionará al redimensionarse la ventana).
         </p><p>
-            Ejemplo con porcentaje (redimensiona la imagen y observa lo que ocurre):
+            Ejemplo con porcentaje (redimensiona la ventana y observa lo que ocurre):
         </p><p>
-            &lt;img src="./dog.jpg" alt="Perro en blanco y negro" width="50%" height="50%">
+            &lt;img src="./dog.jpg" alt="Perro en blanco y negro" width="50%" height="50%"&gt;
         </p><p>
             <img src="./dog.jpg" alt="Perro en blanco y negro" width="100%" height="100%">
         </p><p>
-            Ejemplo con pixeles (redimensiona la imagen y ve lo que ocurre):
+            Ejemplo con pixeles (redimensiona la ventana y ve lo que ocurre):
         </p><p>
-            &lt;img src="./dog.jpg" alt="Perro en blanco y negro" width="100px" height="200px">
+            &lt;img src="./dog.jpg" alt="Perro en blanco y negro" width="100px" height="200px"&gt;
         </p><p>
             <img src="./dog.jpg" alt="Perro en blanco y negro" width="200" height="100">
         </p>
         <hr>
-        <a href="./">&lt&lt&lt Volver al índice</a>
+        <a href="./">&lt;&lt;&lt; Volver al índice</a>
 </html>

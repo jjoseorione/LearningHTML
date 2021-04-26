@@ -9,49 +9,49 @@
         <h1>Combinar celdas de un tabla</h1>
         <h2>Descripción</h2>
         <p>
-            En ocasiones es necesario que no todas las celdas de una tabla sean del mismo tamaño; es decir, que se pueda combinar una o más celdas para formar una más grande. Para este fin, las etiquetas de celda &lttd> y &ltth> dispone de las propiedades rowspan="<em>filas</em>" y colspan="<em>columnas</em>", las cuales sirven para especificar el número de filas y columnas que deberá utilizar una celda específica. Por tanto, entre comillas se debe de poner un número entero igual o mayor a 2. También puede ponerse valor uno, pero esto no tendría mucho sentido, pues es el valor por default.
+            En ocasiones es necesario que no todas las celdas de una tabla sean del mismo tamaño; es decir, que se pueda combinar una o más celdas para formar una más grande. Para este fin, las etiquetas de celda &lt;td&gt; y &lt;th&gt; disponen de las propiedades rowspan="<em>filas</em>" y colspan="<em>columnas</em>", las cuales sirven para especificar el número de filas y columnas que deberá utilizar una celda específica. Por tanto, entre comillas se debe de poner un número entero igual o mayor a 2. También puede ponerse valor uno, pero esto no tendría mucho sentido, pues es el valor por default.
         </p>
         <h2>Ejemplo</h2>
         <p>
             Para que una celda utilice, por ejemplo, 2 filas y 3 columnas en una tabla, se debería de escribir de la forma:<br>
             <br>
-            &lttd rowspan="2" colspan="3">2 Filas y 3 Columnas&lt/td>
+            &lt;td rowspan="2" colspan="3"&gt;2 Filas y 3 Columnas&lt;/td&gt;
         </p><p>
             Haciendo un ejemplo más extenso, usaremos el siguiente código de tabla:
         </p><p>
-            &lttable border="1"><br>
-                &lttr><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                &lt/tr><br>
-                &lttr><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd rowspan="5" colspan="2">5 filas y 2 columnas &lt/td><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd colspan="3">1 fila y 3 columnas &lt/td><br>
-                &lt/tr><br>
-                &lttr><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd rowspan="2" colspan="2">2 filas y 2 columnas &lt/td><br>
-                    &lttd rowspan="2">2 filas y 1 columna &lt/td><br>
-                    &lttd rowspan="4">4 filas y 1 columna &lt/td><br>
-                &lt/tr><br>
-                &lttr><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                &lt/tr><br>
-                &lttr><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                    &lttd rowspan="2" colspan="3">2 filas y 3 columnas &lt/td><br>
-                &lt/tr><br>
-                &lttr><br>
-                    &lttd>1 fila y 1 columna &lt/td><br>
-                 &lt/tr><br>
-             &lt/table><br>
+            &lt;table border="1"&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt;1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td rowspan="5" colspan="2"&gt; 5 filas y 2 columnas &lt;/td&gt;<br>
+                    &lt;td&gt;1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td colspan="3"&gt; 1 fila y 3 columnas &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td rowspan="2" colspan="2"&gt; 2 filas y 2 columnas &lt;/td&gt;<br>
+                    &lt;td rowspan="2"&gt; 2 filas y 1 columna &lt;/td&gt;<br>
+                    &lt;td rowspan="4"&gt; 4 filas y 1 columna &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                    &lt;td rowspan="2" colspan="3"&gt; 2 filas y 3 columnas &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt; 1 fila y 1 columna &lt;/td&gt;<br>
+                 &lt;/tr&gt;<br>
+             &lt;/table&gt;<br>
         </p><p>
             Y el resultado sería el siguiente:
         </p><p>
@@ -92,6 +92,6 @@
         Puede notarse que las celdas que utilizan más de una celda o más de una columna se toman su posición en donde aparece la esquina superior izquierda de dicha celda.
         </p>
         <hr>
-        <a href="./">&lt&lt&lt Volver al índice</a>
+        <a href="./">&lt;&lt;&lt; Volver al índice</a>
     </body>
 </html>

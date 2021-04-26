@@ -6,40 +6,49 @@
     </head>
     <!-------------------------------------------------------------->
     <body>
-    	<h1>Entradas en formularios</h1>
-    	<h2>Descripción</h2>
-    	<p>
-    		Cabe recalcar que existen muchos tipos de entradas (input) en html y es posible que existan nuevos cada vez que se realice una actualización en HTML. Los diferentes tipos de entradas facilitan el control de las mismas para asegurarnos de que los usuario introduzca un tipo de dato específico de forma correcta. Por ejemplo, sería incorrecto que en un campo para "edad" una persona escribiera caracteres no núméricos. Además, cada tipo de input tiene distintos atributos que también ayudan a controlar las variables. Poniendo nuevamente el ejemplo de "edad", sería ilógico que una persona pusiera un número muy grande, como mil, por ejemplo, para su edad en años, por lo que se debe elegir un número máximo.
-    	</p>
-    	<h2>Ejemplos</h2>
-    	<p>
-    		A continuación se muestran algunos ejemplos de inputs. Se prescindirá del elemento form para mostrar únicamente los inputs.
-    	</p><p>
-    		Tipo número:
-    		<input type="number" name="edad" max="120">
-    		<br>
-    		Código: 
-    		&lt;input type="number" name="edad">
-    	</p><p>
-    		Tipo fecha:
-    		<input type="date" name="fechaNac">
-    		<br>
-    		Código:
-    		&lt;input type="date" name="fechaNac">
-    	</p><p>
-    		Tipo color:
-    		<input type="color" name="color">
-    		<br>
-    		Código: &lt;input type="color" name="color">
-    	</p><p>
-    		Tipo hora:
-    		<input type="time" name="hora">
-    		<br>
-    		Código: &lt;input type="time" name="hora">
-        </p><p>
-    		Tipo oculto: Este tipo de entrada, como su nombre lo indica, no se muestra al usuario. Un uso para este tipo de entradas es reutilizar una variable y dejarla como valor para una entrada oculta, de manera que el usuario no sea capaz de cambiarla
-    	</p>
-    	<hr>
-        <a href="./">&lt&lt&lt Volver al índice</a>
+        <h1>Entradas en formularios</h1>
+        <h2>Descripción</h2>
+        <p>
+            Cabe recalcar que existen muchos tipos de entradas (input) en html y es posible que existan nuevos cada vez que se realice una actualización en HTML. Los diferentes tipos de entradas facilitan el control de las mismas para asegurarnos de que el usuario introduzca un tipo de dato específico de forma correcta. Por ejemplo, sería incorrecto que en un campo para "edad" una persona escribiera caracteres no núméricos. Además, cada tipo de input tiene distintos atributos que también ayudan a controlar las variables. Poniendo nuevamente el ejemplo de "edad", sería ilógico que una persona pusiera un número muy grande, como mil, por ejemplo, para su edad en años, por lo que se debe elegir un número máximo.
+        </p>
+        <h4>&nbsp; &nbsp; Atributos max y min</h4>
+        <p>
+            Para controlar los posibles valores de entradas cuantitativas como números, fechas u horas, disponemos de las etiquetas max="<em>valor_máximo</em>" y min="<em>valor_mínimo</em>". Esto nos permite establecer un rango dentro del cual debe especificarse la entrada.
+        </p>
+        <h2>Ejemplos</h2>
+        <p>
+            A continuación se muestran algunos ejemplos de inputs. Los atributos max y min se validan al presionar el botón de "Enviar datos".
+        </p>
+        <form action="" method="">
+            <p>
+                Tipo número:
+                <input type="number" name="edad" max="120" min="12">
+                <br>
+                Código: 
+                &lt;input type="number" name="edad" max="120" min="12"&gt;
+            </p><p>
+                Tipo fecha:
+                <input type="date" name="fechaNac" min="1900-01-01" max="2005-01-01">
+                <br>
+                Código:
+                &lt;input type="date" name="fechaNac" min="1900-01-01" max="2005-01-01"&gt;
+            </p><p>
+                Tipo color:
+                <input type="color" name="color">
+                <br>
+                Código: &lt;input type="color" name="color"&gt;
+            </p><p>
+                Tipo hora:
+                <input type="time" name="hora" min="07:00" max="23:00">
+                <br>
+                Código: &lt;input type="time" name="hora" min="07:00" max="23:00"&gt;
+            </p><p>
+                Tipo oculto: Este tipo de entrada, como su nombre lo indica, no se muestra al usuario. Un uso para este tipo de entradas es reutilizar una variable y dejarla como valor para una entrada oculta, de manera que el usuario no sea capaz de cambiarla
+            </p><p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+        <hr>
+        <a href="./">&lt;&lt;&lt; Volver al índice</a>
     </body>
 </html>

@@ -1,15 +1,18 @@
+/*Comentarios*/
 body
 {
-    background-image: url(../images/code.jpeg); 
-    background-repeat: no-repeat;
+    background-image: url(../images/code.jpeg);
+    /* Los siguientes 3 juntos hacen que la imagen de fondo se expanda sin distorción y sin repetirse */
+    background-repeat: no-repeat; 
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
     font-family: sans-serif;
+    background-color: #222; /*Por si no carga la imagen*/
     color: #222;
 }
-.divfondo
+.divfondo /*El fondo gris sobre el que se pone el texto*/
 {
-    background-color: #E7E7E7; 
+    background-color: #E7E7E7;
     padding: 1em; 
     padding-bottom: 2em;
     margin-left: 7%; 
@@ -20,7 +23,7 @@ h1
     text-align: center; 
     color:#09F;
     text-shadow: 2px 2px 0 #000;
-    opacity: 1;
+    /*opacity: 1;*/
 }
 h2, h3, h4, h5, h6
 {
@@ -62,6 +65,8 @@ footer
     margin-top: 3em;
     font-size: 0.7em;
     font-weight: bold;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
 }
 .volver
 {

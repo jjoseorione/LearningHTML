@@ -12,38 +12,40 @@
     	    <h1>Margin</h1>
     	    <h2>Descripción</h2>
     	    <p>
-    		    La propiedad margin es una herramienta CSS que sirve para especificar el espacio entre el border de dicho elemento y el siguiente elemento (es decir, el margin del siguiente elemento), tanto a la derecha, izquierda, arriba y abajo.En otras palabras es el espacio inmediario exterior a border. Al igual que border y padding, puede especificrse por separado en cada uno de los cuatro lados del bloque.
+    		    La propiedad margin es una herramienta CSS que sirve para especificar el espacio entre el border de dicho elemento y el border o padding del siguiente elemento, tanto a la derecha, izquierda, arriba y abajo. En otras palabras, border es el espacio inmediario exterior a border. Al igual que border y padding, puede especificrse por separado en cada uno de los cuatro lados del bloque.
     	    </p>
+            <p>
+                Algo que es importante notar en el elemento margin es el hecho de que los margin de elementos continuos pueden unirse en uno solo, que es del tamaño del margin más grande. Esto quiere decir que si existen dos elementos adyacentes con márgenes <em><strong>a</strong></em> y <em><strong>b</strong></em> donde <em><strong>a > b</strong></em>, el margen total será <em><strong>a</strong></em> y no <em><strong>a + b</strong></em>. Se podría decir que los márgenes se <em><strong>traspasan</strong></em> entre sí, pero colisionan con el border del siguiente elemento o el padding del elemento exterior. Esto mismo es lo que ocurre normalmente con el elemento p, el cual tiene un margen determinado y al usarlo podemos observar que el margen de los elementos p es el mismo con elementos sin margen o entre otros elementos p (siempre y cuando tengan la misma definición).
+            </p>
     	    <h2>Ejemplos</h2>
             <h3>Ejemplo 1</h3>
     	    <p>
     	        Ejemplo de dos párrafos con 0px de margin y border de 2px. sólido y de color azúl.
     	        <div class="divcodigo">
-	                &lt;html><br>
-	                &lt;head><br>
+	                &lt;html&gt;<br>
                     <br>
-	                &lt;title>&lt;/title><br>
-	                &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+	                &lt;head&gt;<br>
+	                &lt;title&gt;&lt;/title&gt;<br>
+	                &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
                     p<br>
                     {<br>
                     border: 2px solid blue;<br>
                     margin: 0px;<br>
                     }<br>
-                    &lt;/style><br>
+                    &lt;/style&gt;<br>
+	                &lt;/head&gt;<br>
                     <br>
-	                &lt;/head><br>
-	                &lt;body><br>
-                    <br>
-                    &lt;p><br>
+	                &lt;body&gt;<br>
+                    &lt;p&gt;<br>
                     Párrafo 1<br>
-                    &lt;/p><br>
-                    &lt;p><br>
+                    &lt;/p&gt;<br>
+                    &lt;p&gt;<br>
                     Párrafo 2<br>
-                    &lt;/p><br>
+                    &lt;/p&gt;<br>
+	                &lt;/body&gt;<br>
                     <br>
-	                &lt;/body><br>
-	                &lt;/html>
+	                &lt;/html&gt;
     	        </div>
     	    </p>
             <p>
@@ -62,31 +64,30 @@
             <p>
                 Ejemplo de dos párrafos con 10px de margin y border de 2px. sólido y de color azúl:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
+                    &lt;html&gt;<br>
                     <br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
                     p<br>
                     {<br>
                     border: 2px solid blue;<br>
                     margin: 10px;<br>
                     }<br>
-                    &lt;/style><br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
                     <br>
-                    &lt;/head><br>
-                    &lt;body><br>
-                    <br>
-                    &lt;p><br>
+                    &lt;body&gt;<br>
+                    &lt;p&gt;<br>
                     Párrafo 1<br>
-                    &lt;/p><br>
-                    &lt;p><br>
+                    &lt;/p&gt;<br>
+                    &lt;p&gt;<br>
                     Párrafo 2<br>
-                    &lt;/p><br>
+                    &lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
                     <br>
-                    &lt;/body><br>
-                    &lt;/html>
+                    &lt;/html&gt;
                 </div>
             </p>
             <p>
@@ -103,39 +104,31 @@
             </p>
             <h3>Ejemplo 3</h3>
             <p>
-                Ejemplo de dos párrafos, uno con 20px de margin y otro con 0px de margin; ambos con border de 2px. sólido y de color azúl:
+                Ejemplo de dos párrafos, uno con 10px de margin y otro con 0px de margin; ambos con border de 0px. sólido y de color azúl:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
+                    &lt;html&gt;<br>
                     <br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
-                    p<br>
-                    {<br>
-                    border: 2px solid blue;<br>
-                    margin: 10px;<br>
-                    }<br>
-                    &lt;/style><br>
+                    &lt;head&gt;<br>
+                    &lt;title>&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;/head&gt;<br>
                     <br>
-                    &lt;/head><br>
-                    &lt;body><br>
-                    <br>
-                    &lt;p><br>
+                    &lt;body&gt;<br>
+                    &lt;p style="border: 2px solid blue; margin: 0px;"&gt;<br>
                     Párrafo 1<br>
-                    &lt;/p><br>
-                    &lt;p><br>
+                    &lt;/p&gt;<br>
+                    &lt;p style="border: 2px solid blue; margin: 10px;"&gt;<br>
                     Párrafo 2<br>
-                    &lt;/p><br>
+                    &lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
                     <br>
-                    &lt;/body><br>
                     &lt;/html>
                 </div>
             </p>
             <p>
                 Vista previa:
                 <div class="htmldefault">
-                    <p style="border: 2px solid blue; margin: 10px;">
+                    <p style="border: 2px solid blue; margin: 0px;">
                     Párrafo 1
                     </p>
                     <p style="border: 2px solid blue; margin: 10px;">

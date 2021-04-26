@@ -9,31 +9,31 @@
     	<h1>Lista desplegable Select</h1>
     	<h2>Descripción</h2>
     	<p>
-    		El elemento select es una lista desplegable. Este elemento HTML nos permite seleccionar una opción una opción entre un conjunto. Veremos en el concepto próximo que, según cómo lo configuremos, podemos seleccionar varias opciones. Para crear un select se utiliza la etiqueta de apertura y cierre &ltselect name="<em>nombreVariable</em>"> y entre las etiquetas de apertura y cierre select, se escriben las etiquetas de apertura y cierre &ltoption value="<em>valorVariable</em>">. Entre las etiquetas de apertura y cierre option se escribe el texto que se mostrará en dicha opción. El campo value de la opción seleccionada se le asignará a la variable del campo name del select.
+    		El elemento select es una lista desplegable. Este elemento HTML nos permite seleccionar una opción entre un conjunto. Para crear un select se utiliza la etiqueta de apertura y cierre &lt;select name="<em>nombreVariable</em>"&lt; y entre las etiquetas de apertura y cierre select, se escriben las etiquetas de apertura y cierre &lt;option value="<em>valorVariable</em>"&lt;. Entre las etiquetas de apertura y cierre option se escribe el texto que se mostrará en dicha opción. El campo value de la opción seleccionada se le asignará a la variable con el nombre del campo name del select.
     	</p>
     	<h2>Ejemplo</h2>
     	<p>
     		Se creará un formulario de registro, para lo cual el usuario debera escribir su nombre y el idioma que desea aprender. El código será el siguiente:
     	</p><p>
-    		&ltform><br>
+    		&lt;form action="" method=""&gt;<br>
     			Ingrese su nombre:<br>
-    			&ltinput type="text" name="nombre" size="30"><br>
-    			&ltbr><br>
+    			&lt;input type="text" name="nombre" size="30"&gt;<br>
+    			&lt;br&gt;<br>
     			Seleccione su idioma:<br>
-    			&ltselect name="idioma"><br>
-    				&ltoption value="1">Español&lt/option><br>
-    				&ltoption value="2">Inglés&lt/option><br>
-    				&ltoption value="3">Francés&lt/option><br>
-    				&ltoption value="4">Portugués&lt/option><br>
-    				&ltoption value="5">Japonés&lt/option><br>
-    			&lt/select><br>
-    			&ltbr><br>
-    			&ltinput type="submit" value="Enviar"><br>
-    		&lt/form><br>
+    			&lt;select name="idioma"&gt;<br>
+    				&lt;option value="1"&gt; Español &lt;/option&gt;<br>
+    				&lt;option value="2"&gt; Inglés &lt;/option&gt;<br>
+    				&lt;option value="3"&gt; Francés &lt;/option&gt;<br>
+    				&lt;option value="4"&gt; Portugués &lt;/option&gt;<br>
+    				&lt;option value="5"&gt; Japonés &lt;/option&gt;<br>
+    			&lt;/select&gt;<br>
+    			&lt;br&gt;<br>
+    			&lt;input type="submit" value="Enviar"&gt;<br>
+    		&lt;/form&gt;<br>
     	</p><p>
     		Y éste sería el resultado:
     	</p><p>
-    		<form>
+    		<form action="" method="">
     			Ingrese su nombre:
     			<input type="text" name="nombre" size="30">
     			<br>
@@ -50,6 +50,6 @@
     		</form>
         </p>
         <hr>
-        <a href="./">&lt&lt&lt Volver al índice</a>
+        <a href="./">&lt;&lt;&lt; Volver al índice</a>
     </body>
 </html>

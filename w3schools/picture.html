@@ -13,28 +13,28 @@
 
     	    <h2>Descripción</h2>
     	    <p>
-    		    El elemento de apertura y cierre &lt;picture&lt;&lt;/picture> tiene la utilidad de dar mayor flexibilidad a los desarrolladores para especificar imágenes. El elemento &lt;pictue> encierra a uno o más elementos &lt;source> y a un elemento img. Los elementos source especifican diferentes imágenes a través del atributo srcset="ruta_imagen" y cuándo es mejor utilizar dichas imágenes según el atributo media="mejor_caso", mientras que el elemento img da la última opción de imagen y además define los parámetros que tendrá la imagen que se mostrará finalmente. De esta manera, el navegador puede elegir cuál es la mejor imagen para mostrar; es decir, sólo se muestra un elemento entre los source y el img, y éste es el más adecuado según el atributo media de cada uno.
+    		    El elemento de apertura y cierre &lt;picture&lt;&gt;/picture&lt; tiene la utilidad de dar mayor flexibilidad a los desarrolladores para especificar imágenes. El elemento &lt;pictue&gt; encierra a uno o más elementos &lt;source&gt; y a un elemento &lt;img&gt;. Los elementos source especifican diferentes imágenes a través del atributo srcset="<em>ruta_imagen</em>" y cuándo es mejor utilizar dichas imágenes según el atributo media="<em>mejor_caso</em>", mientras que el elemento &lt;img&gt; da la última opción de imagen y además define los parámetros que tendrá la imagen que se mostrará finalmente. Entre las condiciones que puede llevar el atributo media se encuentran (max-width: <em>anchoMáximo</em>), (min-width: <em>anchoMínimo</em>), (max-height: <em>alturaMáxima</em>), (min-height: <em>alturaMínima</em>), (orientation: portrait) y (orientarion: landscape). Estas condiciones pueden ser conjuntadas con los operadores lógicos <strong>and</strong> y <stong>or</stong>. De esta manera, el navegador puede elegir cuál es la mejor imagen para mostrar; es decir, sólo se muestra un elemento entre los source y el img, y éste es el más adecuado según el atributo media de cada uno.
     	    </p>
 
     	    <h2>Ejemplo</h2>
     	    <p>
     	        Ejemplo de uso del elemento picture. Redimensiona la ventana para ver el resultado:
     	        <div class="divcodigo">
-	                &lt;html><br>
-	                &lt;head><br>
-	                &lt;title>&lt;/title><br>
+	                &lt;html&gt;<br>
+	                &lt;head&gt;<br>
+	                &lt;title>&lt;/title&gt;<br>
 	                &lt;meta charset="UTF-8"><br>
-	                &lt;/head><br>
-	                &lt;body><br>
+	                &lt;/head&gt;<br>
+	                &lt;body&gt;<br>
 
-                    &lt;picture><br>
+                    &lt;picture&gt;<br>
                         &lt;source media="(min-width: 1000px)" srcset="../images/twin_towers1.jpg"><br>
                         &lt;source media="(min-width: 750px)" srcset="../images/twin_towers2.jpg"><br>
                         &lt;img src="../images/twin_towers3.jpg" style="width:100%;"><br>
-                    &lt;/picture><br>
+                    &lt;/picture&gt;<br>
                     
-	                &lt;/body><br>
-	                &lt;/html>
+	                &lt;/body&gt;<br>
+	                &lt;/html&gt;
     	        </div>
     	    </p>
             <p>

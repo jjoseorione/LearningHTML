@@ -13,13 +13,13 @@
 
     	    <h2>Descripción</h2>
     	    <p>
-    		    En cualquier elemento de HTML es posible definir un color de fondo; de la misma manera, también es posible definir una magen de fondo. Para ello, se debe de usar la propuedad CSS background-image: url(ruta_imagen). Esta propiedad se puede usar en cualquier elemento HTML, aunque si se quiere usar como imagen de fondo a la página, debe usarse dentro del elemento body.
+    		    En cualquier elemento de HTML es posible definir un color de fondo; de la misma manera, también es posible definir una magen de fondo. Para ello, se debe de usar la propiedad CSS <strong>background-image: url(ruta_imagen)</strong>. Esta propiedad se puede usar en cualquier elemento HTML, aunque si se quiere usar como imagen de fondo a la página, debe usarse dentro del elemento body.
     	    </p>
             <p>
-                Si se utiliza sólo el elemento mencionado, la imagen abarcará todo su tamaño original y, en caso de hacer falta espacio, se repetirá hasta abarcar todo el elemento. Para evitar que la imagen se repita, debemos usar la propiedad CSS background-repeat: no-repeat;. Esto puede hacer que la imagen sólo se muestre una vez y la parte que no alcance a ser cubierta por la imagen, quede en blanco (o en el color de fondo que hayamos seleccionado). Para evitar que queden espacios en blanco podemos hacer que la imagen cubra todo el elemento deseado con las propiedades CSS background-size: cover; y background-attachment: fixed; las cuales deben usarse juntas para asegurarnos de que siempre se abarque todo el elemento. Esta combinación hace que la imagen conserve su relación de ancho y alto. Además, el elemento background-attachment: fixed; hace que la imagen se mantenga fija sin tomar en cuenta el scroll en la página, lo que puede dar un efecto de 3d cuando se utiliza en elementos HTML diferentes a body.
+                Si se utiliza sólo el elemento mencionado, la imagen abarcará todo su tamaño original y, en caso de hacer falta espacio, se repetirá hasta abarcar todo el elemento. Para evitar que la imagen se repita, debemos usar la propiedad CSS <strong>background-repeat: no-repeat;</strong>. Esto puede hacer que la imagen sólo se muestre una vez y la parte que no alcance a ser cubierta por la imagen, quede en blanco (o en el color de fondo que hayamos seleccionado). Para evitar que queden espacios en blanco podemos hacer que la imagen cubra todo el elemento deseado con las propiedades CSS <strong>background-size: cover;</strong> y <strong>background-attachment: fixed;</strong> las cuales deben usarse juntas para asegurarnos de que siempre se abarque todo el elemento. Esta combinación hace que la imagen conserve su relación de ancho y alto. Además, el elemento <strong>background-attachment: fixed;</strong> hace que la imagen se mantenga fija sin tomar en cuenta el scroll en la página, lo que puede dar un efecto de 3d cuando se utiliza en elementos HTML diferentes a body.
             </p>
             <p>
-                Otra forma de hacer que una imagen abarque toda la página es estirarla al tamaño entero de la página. Esta opción podría no ser la mejor en muchos casos, ya que la imagen perdería su relación de aspecto. Para ello se vuelven a utilizar las propiedades background-repeat: no-repeat; background-attachment: fixed; y adicionalmente se agrega background-size: 100% 100%;
+                Otra forma de hacer que una imagen abarque toda la página es estirarla al tamaño entero de la página. Esta opción podría no ser la mejor en muchos casos, ya que la imagen perdería su relación de aspecto. Para ello se vuelven a utilizar las propiedades <strong>background-repeat: no-repeat; background-attachment: fixed;</strong> y adicionalmente se agrega <strong>background-size: 100% 100%;</strong>
             </p>
 
     	    <h2>Ejemplos</h2>
@@ -28,21 +28,34 @@
     	    <p>
     	        Ejemplo de imagen de fondo repetida:
     	        <div class="divcodigo">
-	                &lt;html><br>
-	                &lt;head><br>
+	                &lt;html&lt;<br>
+	                &lt;head&lt;<br>
                     <br>
-	                &lt;title>&lt;/title><br>
-	                &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+	                &lt;title&lt;&lt;/title&lt;<br>
+	                &lt;meta charset="UTF-8"&lt;<br>
+                    &lt;style&lt;<br>
                         body{<br>
                         background-image: url(../images/velasco.jpg);<br>
                         }<br>
-                    &lt;/style><br>
+                    &lt;/style&lt;<br>
                     <br>
-	                &lt;/head><br>
-	                &lt;body><br>
+	                &lt;/head&lt;<br>
+	                &lt;body&lt;<br>
                     <br>
-                    &lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p><br>
+                    &lt;p&lt;Texto de muestra&lt;/p&lt;<br>
+                    &lt;p&lt;Texto de muestra&lt;/p&lt;<br>
+                    &lt;p&lt;Texto de muestra&lt;/p&lt;<br>
+                    &lt;p&lt;Texto de muestra&lt;/p&lt;<br>
+                    &lt;p&lt;Texto de muestra&lt;/p&lt;<br>
+                    &lt;p&lt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
                     <br>
 	                &lt;/body><br>
 	                &lt;/html>
@@ -52,7 +65,20 @@
                 Vista previa:
                 <div class="htmldefault" style="
                 background-image: url(../images/velasco.jpg);">
-                <p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
                 </div>
             </p>
 
@@ -60,33 +86,60 @@
             <p>
                 Ejemplo de imagen de fondo sin repetir:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
                     <br>
-                    &lt;title>&lt;/title><br>
+                    &lt;title&gt;&lt;/title&gt;<br>
                     &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+                    &lt;style&gt;<br>
                         body{<br>
                         background-image: url(../images/velasco.jpg);<br>
                          background-repeat: no-repeat;<br>
                         }<br>
-                    &lt;/style><br>
+                    &lt;/style&gt;<br>
                     <br>
-                    &lt;/head><br>
-                    &lt;body><br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
                     <br>
-                    &lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p><br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
                     <br>
-                    &lt;/body><br>
-                    &lt;/html>
+                    <br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
                 </div>
             </p>
             <p>
                 Vista previa:
                 <div class="htmldefault" style="
                 background-image: url(../images/velasco.jpg);
-                 background-repeat: no-repeat;">
-                <p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p>
+                background-repeat: no-repeat;">
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
                 </div>
             </p>
 
@@ -94,35 +147,61 @@
             <p>
                 Ejemplo de imagen de fondo sin repetir ni dejar espacios en blanco y sin attachment fixed:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
                     <br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+                    &lt;title&gt;&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
                         body{<br>
                         background-image: url(../images/velasco.jpg);<br>
                          background-repeat: no-repeat;<br>
                          background-size: cover;<br>
                         }<br>
-                    &lt;/style><br>
+                    &lt;/style&gt;<br>
                     <br>
-                    &lt;/head><br>
-                    &lt;body><br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
                     <br>
-                    &lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p><br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
                     <br>
-                    &lt;/body><br>
-                    &lt;/html>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
                 </div>
             </p>
             <p>
                 Vista previa:
                 <div class="htmldefault" style="
                 background-image: url(../images/velasco.jpg);
-                 background-repeat: no-repeat;
-                 background-size: cover;">
-                <p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p>
+                background-repeat: no-repeat;
+                background-size: cover;">
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
                 </div>
             </p>
 
@@ -130,26 +209,39 @@
             <p>
                 Ejemplo de imagen de fondo sin repetir ni dejar espacios en blanco y con attachment fixed (efecto 3d):
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
                     <br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+                    &lt;title&gt; &lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
                         body{<br>
                         background-image: url(../images/velasco.jpg);<br>
                          background-repeat: no-repeat;<br>
                          background-size: cover;<br>
                          background-attachment: fixed;<br>
                         }<br>
-                    &lt;/style><br>
+                    &lt;/style&gt;<br>
                     <br>
-                    &lt;/head><br>
-                    &lt;body><br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
                     <br>
-                    &lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p><br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
                     <br>
-                    &lt;/body><br>
+                    &lt;/body&gt;<br>
                     &lt;/html>
                 </div>
             </p>
@@ -157,10 +249,23 @@
                 Vista previa:
                 <div class="htmldefault" style="
                 background-image: url(../images/velasco.jpg);
-                 background-repeat: no-repeat;
-                 background-size: cover;
-                 background-attachment: fixed;">
-                <p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p>
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;">
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
                 </div>
             </p>
 
@@ -168,25 +273,38 @@
             <p>
                 Ejemplo de imagen de fondo estirada:
                 <div class="divcodigo">
-                    &lt;html><br>
-                    &lt;head><br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
                     <br>
-                    &lt;title>&lt;/title><br>
-                    &lt;meta charset="UTF-8"><br>
-                    &lt;style><br>
+                    &lt;title&gt;&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;style&gt;<br>
                         body{<br>
                         background-image: url(../images/velasco.jpg);<br>
                          background-repeat: no-repeat;<br>
                          background-size: 100% 100%;<br>                        }<br>
-                    &lt;/style><br>
+                    &lt;/style&gt;<br>
                     <br>
-                    &lt;/head><br>
-                    &lt;body><br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
                     <br>
-                    &lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p>&lt;p>Texto de muestra&lt;/p><br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
+                    &lt;p&gt;Texto de muestra&lt;/p&gt;<br>
                     <br>
-                    &lt;/body><br>
-                    &lt;/html>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
                 </div>
             </p>
             <p>
@@ -195,7 +313,20 @@
                 background-image: url(../images/velasco.jpg);
                  background-repeat: no-repeat;
                  background-size: 100% 100%;">
-                <p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p><p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
+                <p>Texto de muestra</p>
                 </div>
             </p>
         <a href="./" class="aboton">Volver al índice</a>

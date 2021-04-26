@@ -13,22 +13,22 @@
     	</p><p>
     		HTML tiene únicamente la capacidad de crear formularios y no puede recuperar los datos enviados por el usuario ni de registrarlos en el servidor. Para ello se requiere de algún lenguaje de programación que se ejecute en el lado del servidor, como PHP, ASP, ASP.Net, JSP, NodeJS, etc.
     	</p><p>
-    		Para crear un formulario se debe usar la etiqueta &ltform>, la cual debe tener apertura y cierre. Dentro del form se pueden crear distintos tipos de entradas, como botones, editores de línea, cuadros de chequeo, radios de selección, etc.
+    		Para crear un formulario se debe usar la etiqueta &lt;form&gt;, la cual debe tener apertura y cierre. Dentro del form se pueden crear distintos tipos de entradas, como líneas numéricas, líneas alfanuméricas, botones, editores de línea, cuadros de chequeo, radios de selección, etc.
     	</p><p>
-    		Los formularios pueden hacer uso de distintos atributos. Los dos principales son action="<em>páginaDeAcción</em>" y method="<em>MétodoDeAcción</em>". La página de acción es aquella que verá reflejada la entrada; es decir, la página que utiliza los datos de entrada. El método, de forma sencilla, define si los datos son privados (por ejemplo, una contraseña) o si pueden mostrarse en la página sin ningún problema.
+    		Los formularios pueden hacer uso de distintos atributos. Los dos principales son action="<em>páginaDeAcción</em>" y method="<em>MétodoDeAcción</em>". La página de acción es aquella que verá reflejada la entrada; es decir, la página que utiliza los datos de entrada. El método, dicho de forma sencilla, define si los datos son privados (por ejemplo, una contraseña) o si pueden mostrarse en la página sin ningún problema.
     	</p><p>
-    		Las entradas usan la etiqueta &ltinput> y también pueden usar diferentes atributos. Los principales son type="TipoDeEntrada" y name="nombreVariable". El atributo type, como su nombre lo indica, se refiere a qué tipo de datos se le piden al usuario, mientras que el atributo name guarda el nombre que se le de a la variable en donde se guardaran los datos introducidos por el usuario. El atributo size define el tamaño de la ventana de texto que se mostrará para escribir la entrada y no límita el número de caracteres que puedan introducirse.
+    		Las entradas usan la etiqueta &lt;input&gt; y también pueden usar diferentes atributos. Los principales son type="<em>TipoDeEntrada</em>" y name="<em>nombreVariable</em>". El atributo type, como su nombre lo indica, se refiere a qué tipo de datos se le piden al usuario, mientras que el atributo name guarda el nombre que se le de a la variable en donde se guardaran los datos introducidos por el usuario. El atributo size define el tamaño de la ventana de texto que se mostrará para escribir la entrada y no límita el número de caracteres que puedan introducirse.
     	</p>
 
     	<h2>Ejemplo</h2>
     	<p>
     		Se creará un formulario únicamente con una entrada de texto y un botón de envío. El código será el siguiente:
     	</p><p>
-    		&ltform action="formulario1.html" method="post"><br>
+    		&lt;form action="formulario1.html" method="post"&gt;<br>
     			Escriba su nombre:<br>
-    			&ltinput type="text" name="nombre" size="20"><br>
-    			&ltbr><br>
-    			&ltinput type="submit" name="enviar"><br>
+    			&lt;input type="text" name="nombre" size="20"&gt;<br>
+    			&lt;br&gt;<br>
+    			&lt;input type="submit" name="enviar"&gt;<br>
     		&lt/form><br>
     	</p><p>
     		Y éste sería el resultado:
